@@ -2,13 +2,13 @@
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
-$step = "newplabets";
+$step = "plabets2024";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $allRacesRunners = include($currentDir . DIRECTORY_SEPARATOR . "1.php");
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "plaodds.php");
-$history = include(__DIR__ . DIRECTORY_SEPARATOR . "newtriohistory.php");
+$history = include(__DIR__ . DIRECTORY_SEPARATOR . "triohistory2024.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
@@ -24,7 +24,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!isset($allRacesRunners[$raceNumber])) continue;
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['places'])) $oldPlaces = explode(", ", $oldData[$raceNumber]['places']);
-        if(isset($oldData[$raceNumber]['places'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
+        if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
     }
     if(isset($oldPlaces)) $places = $oldPlaces;
     else $places = [];
@@ -63,7 +63,29 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $allTrioValues1 = array_keys($qplsOdds);
     // $qin1 = array_slice($allTrioValues1, 0, 6);
     $qin1 = $allTrioValues1;
-    
+    $interF = $qin1;
+    foreach($favorites as $F){
+        $raceDataF = $history[$raceNumber][$F];
+        $trioF = $raceDataF['trio'];
+        $allTrioValuesF = [];
+        foreach($trioF as $trioItemF){
+           $allTrioValuesF = array_values(array_unique(array_merge($allTrioValuesF, $trioItemF)));
+        }
+        //Sort  allTrioValuesF by odds
+        $qplsOdds = [];
+        foreach($allTrioValuesF as $iIndex){
+           if(isset($allRacesOdds[$raceNumber][$iIndex])) $qplsOdds[$iIndex] = $allRacesOdds[$raceNumber][$iIndex];
+        }
+        asort($qplsOdds);
+        $allTrioValuesF = array_keys($qplsOdds);
+        $allTrioValuesF = array_slice($allTrioValuesF, 0, 6);
+        $racetext .= "\t\t'Trio values(Fav: $F)' =>  '" . implode(", ", $allTrioValuesF) . "',\n";
+        $interF = array_intersect($interF, $allTrioValuesF);
+    }
+    if(!empty($interF)){
+        $racetext .= "\t\t'interF' =>  '" . implode(", ", $interF) . "',\n";
+    }
+
     $allTrioValues2 = [];
     foreach($trio2 as $trioItem2){
         $allTrioValues2 = array_values(array_unique(array_merge($allTrioValues2, $trioItem2)));
@@ -112,7 +134,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t// count < 2\n";
     }
     $racetext .= "\t],\n";
-    unset($oldData);
     unset($oldPlaces);
     unset($oldFavorites);
     unset($places);
