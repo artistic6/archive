@@ -2,6 +2,7 @@
 
 return [
 	'Race 5- Selected 9(odds: 1.5)',
+	'Race 9- Selected 11(odds: 1.5)',
 	'Race 1- Selected 3(odds: 1.7)',
 	'Race 2- Selected 7(odds: 1.7)',
 	'Race 3- Selected 1(odds: 1.7)',

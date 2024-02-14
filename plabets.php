@@ -2,13 +2,16 @@
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
-$step = "plabets";
+if(isset($argv[2])) $stage = trim($argv[2]);
+else $stage = 1;
+
+$step = "plabets$stage";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $allRacesRunners = include($currentDir . DIRECTORY_SEPARATOR . "1.php");
 $allRacesOdds = include($currentDir . DIRECTORY_SEPARATOR . "plaodds.php");
-$history = include(__DIR__ . DIRECTORY_SEPARATOR . "triohistory.php");
+$history = include(__DIR__ . DIRECTORY_SEPARATOR . "triohistory$stage.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
