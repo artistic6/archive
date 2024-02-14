@@ -92,7 +92,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $interF = array_intersect($unionF, $allTrioValuesF);
     }
     if(!empty($interF)){
-        $wp = $interF[0];
+        $wp = array_values($interF)[0];
         if(!in_array($wp, $WPs)) $WPs[] = $wp;
     }
     //Sort  unionF by odds
@@ -133,6 +133,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $qin3 = $allTrioValues3;
     $inter = array_values(array_intersect($qin1, $qin2, $qin3));
     if(!empty($inter)){
+        $racetext .= "\t\t'inter' =>  '" . implode(", ", $inter) . "',\n";
         $racetext .= "\t\t'Place'  =>  '" . $inter[0] . "',\n";
         if(!in_array($inter[0], $places)) $places[] = $inter[0];
     }
