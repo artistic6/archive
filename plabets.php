@@ -141,7 +141,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $racetext .= "\t\t'places' => '" . implode(", ", $places) . "',\n";
     }
     if(!empty($WPs)){
-        $racetext .= "\t\t'WPs' => '" . implode(", ", $WPs) . "',\n";
+        $racetext .= "\t\t'WPs'    => '" . implode(", ", $WPs) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldPlaces);
