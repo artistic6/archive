@@ -27,10 +27,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!isset($allRacesRunners[$raceNumber])) continue;
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['places'])) $oldPlaces = explode(", ", $oldData[$raceNumber]['places']);
+        if(isset($oldData[$raceNumber]['WPs'])) $oldWPs = explode(", ", $oldData[$raceNumber]['WPs']);
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
     }
     if(isset($oldPlaces)) $places = $oldPlaces;
     else $places = [];
+    if(isset($oldWPs)) $WPs = $oldWPs;
+    else $WPs = [];
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
     
@@ -68,6 +71,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $qin1 = $allTrioValues1;
 
     $unionF = $qin1;
+    $interF = $qin1;
     foreach($favorites as $F){
         $raceDataF = $history[$raceNumber][$F];
         $trioF = $raceDataF['trio'];
@@ -85,6 +89,11 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $allTrioValuesF = array_slice($allTrioValuesF, 0, 6);
         $racetext .= "\t\t'Trio values(Fav: $F)' =>  '" . implode(", ", $allTrioValuesF) . "',\n";
         $unionF = array_values(array_unique(array_merge($unionF, $allTrioValuesF)));
+        $interF = array_intersect($unionF, $allTrioValuesF);
+    }
+    if(!empty($interF)){
+        $wp = $interF[0];
+        if(!in_array($wp, $WPs)) $WPs[] = $wp;
     }
     //Sort  unionF by odds
     $qplsOdds = [];
@@ -93,6 +102,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     asort($qplsOdds);
     $unionF = array_keys($qplsOdds);
+    $racetext .= "\t\t'interF' =>  '" . implode(", ", $interF) . "',\n";
     $racetext .= "\t\t'unionF' =>  '" . implode(", ", $unionF) . "',\n";
     $allTrioValues2 = [];
     foreach($trio2 as $trioItem2){
@@ -129,6 +139,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     
     if(!empty($places)){
         $racetext .= "\t\t'places' => '" . implode(", ", $places) . "',\n";
+    }
+    if(!empty($WPs)){
+        $racetext .= "\t\t'WPs' => '" . implode(", ", $WPs) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldPlaces);
