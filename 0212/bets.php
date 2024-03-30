@@ -8,7 +8,6 @@ return [
 		'favorites' => '12, 4',
 		'win hist(fav 4)' => '1, 2, 4, 5, 10',
 		'win hist(fav 12)' => '10',
-		'win hist(fav 12)' => '10',
 		'place' => '',
 	],
 	'2' => [
@@ -17,7 +16,6 @@ return [
 		*/
 		'favorites' => '12, 13, 2, 3',
 		'win hist(fav 12)' => '6, 10, 13',
-		'win hist(fav 13)' => '13',
 		'win hist(fav 13)' => '13',
 		'place' => '2, 3',
 	],
@@ -43,7 +41,6 @@ return [
 		*/
 		'favorites' => '12, 4, 10',
 		'win hist(fav 10)' => '1, 2, 3, 4, 11',
-		'win hist(fav 12)' => '2, 5, 6, 12',
 		'win hist(fav 12)' => '2, 5, 6, 12',
 		'place' => '4',
 	],
@@ -76,7 +73,6 @@ return [
 		'favorites' => '8, 12, 1',
 		'win hist(fav 8)' => '1, 5, 8',
 		'win hist(fav 12)' => '5, 12',
-		'win hist(fav 12)' => '5, 12',
 		'place' => '1',
 	],
 	'10' => [
@@ -85,7 +81,6 @@ return [
 		*/
 		'favorites' => '13, 5',
 		'win hist(fav 5)' => '3, 4, 5, 8, 12',
-		'win hist(fav 13)' => '3',
 		'win hist(fav 13)' => '3',
 		'place' => '',
 	],
@@ -97,12 +92,6 @@ return [
 		'win hist(fav 4)' => '12',
 		'win hist(fav 5)' => '12',
 		'win hist(fav 6)' => '4, 12',
-		'win hist(fav 13)' => '12',
-		'win hist(fav 5)' => '12',
-		'win hist(fav 6)' => '4, 12',
-		'win hist(fav 13)' => '12',
-		'win hist(fav 6)' => '4, 12',
-		'win hist(fav 13)' => '12',
 		'win hist(fav 13)' => '12',
 		'place' => '',
 	],

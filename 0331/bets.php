@@ -8,7 +8,6 @@ return [
 		'favorites' => '8, 14',
 		'win hist(fav 8)' => '1, 2, 3, 5, 10, 12',
 		'win hist(fav 14)' => '14',
-		'win hist(fav 14)' => '14',
 		'place' => '',
 	],
 	'2' => [
@@ -77,7 +76,6 @@ return [
 		*/
 		'favorites' => '8, 7',
 		'win hist(fav 7)' => '2, 7, 8, 11, 12',
-		'win hist(fav 8)' => '7, 8',
 		'win hist(fav 8)' => '7, 8',
 		'place' => '',
 	],
