@@ -1,13 +1,4 @@
 <?php
-/**
- * returns true if array1 is cotnained in array2
- */
-function inArray($array1, $array2){
-    foreach($array1 as $val){
-        if(!in_array($val, $array2)) return false;
-    }
-    return true;
-}
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
@@ -68,8 +59,9 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             if($two > $one){
                 $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
                 $win2 = array_intersect($history[$raceNumber][$two]['win'], $runners);
+                if(count($win1) > 6 || count($win2) > 6) continue;
                 $inter = array_intersect($win1, $win2);
-                if(count($inter) >= 3){
+                if(count($inter) > 2){
                     // $racetext .= "\t\t'win hist(fav $one)' => '" . implode(", ", $win1) . "',\n"; 
                     // $racetext .= "\t\t'win hist(fav $two)' => '" . implode(", ", $win2) . "',\n"; 
                     $union = array_values(array_unique(array_merge($union, $inter)));
