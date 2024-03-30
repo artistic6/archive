@@ -58,6 +58,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
         if(count($win1) < 6) continue;
         if(!in_array($one, $place)) $place[] = $one;
+        $racetext .= "\t\t'win hist(fav $one)' => '" . implode(", ", $win1) . "',\n"; 
         foreach($favorites as $two){
             if($two > $one){
                 $win2 = array_intersect($history[$raceNumber][$two]['win'], $runners);
