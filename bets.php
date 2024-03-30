@@ -68,7 +68,8 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         }
     }
     if(!empty($union)){
-        $racetext .= "\t\t'win' => '" . implode(", ", $union) . "',\n";
+        $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
+        $racetext .= "\t\t'win' => '" . implode(", ", $favorites) . "',\n";
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
