@@ -1,3 +1,4 @@
+
 <?php
 
 $currentYear = "2024";
@@ -23,7 +24,7 @@ if (!file_exists($outDir)) {
     mkdir($outDir, 0777, true);
 }
 
-$outFile =$outDir . DIRECTORY_SEPARATOR . "plaodds.php";
+$outFile =$outDir . DIRECTORY_SEPARATOR . "odds.php";
 
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
