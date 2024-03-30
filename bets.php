@@ -53,17 +53,24 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
     $union = [];
+    $place = [];
     foreach($favorites as $one){
+        $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
+        if(count($win1) > 6) {
+            if(!in_array($one, $place)) $place[] = $one;
+            continue;
+        }
+        $racetext .= "\t\t'win hist(fav $one)' => '" . implode(", ", $win1) . "',\n"; 
         foreach($favorites as $two){
-            if(!isset($history[$raceNumber][$one]['win']) || !isset($history[$raceNumber][$two]['win'])) continue;
             if($two > $one){
-                $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
                 $win2 = array_intersect($history[$raceNumber][$two]['win'], $runners);
-                if(count($win1) > 6 || count($win2) > 6) continue;
+                if(count($win2) > 6) {
+                    if(!in_array($two, $place)) $place[] = $two;
+                    continue;
+                }
+                $racetext .= "\t\t'win hist(fav $two)' => '" . implode(", ", $win2) . "',\n"; 
                 $inter = array_intersect($win1, $win2);
                 if(count($inter) > 2){
-                    // $racetext .= "\t\t'win hist(fav $one)' => '" . implode(", ", $win1) . "',\n"; 
-                    // $racetext .= "\t\t'win hist(fav $two)' => '" . implode(", ", $win2) . "',\n"; 
                     $union = array_values(array_unique(array_merge($union, $inter)));
                     $racetext .= "\t\t'inter(fav $one, fav $two)' => '" . implode(", ", $inter) . "',\n"; 
                 }
@@ -72,9 +79,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(!empty($union)){
         $candidates = [2, 3, 4, 5, 6];
-        $place = array_intersect($favorites, $candidates);
-        $racetext .= "\t\t'win' => '" . implode(", ", $place) . "',\n";
+        $wp = array_intersect($favorites, $candidates);
+        $racetext .= "\t\t'win' => '" . implode(", ", $wp) . "',\n";
     }
+    $racetext .= "\t\t'place' => '" . implode(", ", $place) . "',\n";
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
