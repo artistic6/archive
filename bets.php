@@ -71,7 +71,7 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     }
     if(!empty($union)){
         $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
-        if(count($favorites) >= 3) {
+        if(count($favorites) >= 3 && !(in_array(1, $favorites) && in_array(3, $favorites))) {
             $racetext .= "\t\t'win' => '" . implode(", ", $favorites) . "',\n";
         }
     }
