@@ -53,6 +53,10 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
     $union = [];
+    if(count($favorites) === 1){
+        $winF = array_intersect($history[$raceNumber][$favorite]['win'], $runners);
+        $racetext .= "\t\t'win hist(fav $favorite)' => '" . implode(", ", $winF) . "',\n"; 
+    }
     foreach($favorites as $one){
         $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
         // if(count($win1) < 6) continue;

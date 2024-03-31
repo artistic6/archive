@@ -62,12 +62,14 @@ return [
 		Race 7
 		*/
 		'favorites' => '4',
+		'win hist(fav 4)' => '1, 2, 3, 4, 5, 7, 8, 10, 11',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
 		'favorites' => '6',
+		'win hist(fav 6)' => '4, 6',
 	],
 	'9' => [
 		/**

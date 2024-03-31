@@ -24,12 +24,14 @@ return [
 		Race 3
 		*/
 		'favorites' => '4',
+		'win hist(fav 4)' => '2, 3, 4, 5, 6',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
 		'favorites' => '14',
+		'win hist(fav 14)' => '1',
 	],
 	'5' => [
 		/**
@@ -43,12 +45,14 @@ return [
 		Race 6
 		*/
 		'favorites' => '3',
+		'win hist(fav 3)' => '1, 2, 3, 5, 7, 9, 11',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
 		'favorites' => '4',
+		'win hist(fav 4)' => '1, 2, 3, 4, 5, 7, 8, 10, 11',
 	],
 	'8' => [
 		/**
