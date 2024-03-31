@@ -56,12 +56,12 @@ return [
 		Race 8
 		*/
 		'favorites' => '1, 14, 4',
-		'additional favorites' => '10',
+		'additional favorites' => '10, 13',
 		'win hist(fav 4)' => '1, 2, 4, 6, 7, 8, 9, 12',
 		'inter(fav 4, fav 10)' => '2, 4, 7, 9',
 		'win hist(fav 10)' => '2, 3, 4, 7, 9, 10',
 		'union' => '2, 4, 7, 9',
-		'win' => '1, 4, 10, 14',
+		'win' => '1, 4, 10, 13, 14',
 	],
 	'9' => [
 		/**
