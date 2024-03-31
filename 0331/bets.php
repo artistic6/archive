@@ -30,8 +30,7 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '14',
-		'win hist(fav 14)' => '1',
+		'favorites' => '14, 3',
 	],
 	'5' => [
 		/**
