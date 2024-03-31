@@ -46,20 +46,21 @@ return [
 		*/
 		'favorites' => '3, 4, 10',
 		'inter(fav 3, fav 4)' => '1, 3, 4, 5, 7',
-		'inter(fav 3, fav 10)' => '1, 3, 4',
+		'inter(fav 3, fav 10)' => '1, 3, 4, 11',
 		'inter(fav 4, fav 10)' => '1, 2, 3, 4',
-		'union' => '1, 2, 3, 4, 5, 7',
+		'union' => '1, 2, 3, 4, 5, 7, 11',
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
-		'favorites' => '1, 3, 5',
+		'favorites' => '1, 3, 5, 11',
 		'inter(fav 1, fav 3)' => '1, 3, 7, 9',
 		'inter(fav 1, fav 5)' => '1',
+		'inter(fav 1, fav 11)' => '12',
 		'inter(fav 3, fav 5)' => '1, 11',
-		'union' => '1, 3, 7, 9, 11',
-		'win' => '1, 3, 5',
+		'union' => '1, 3, 7, 9, 11, 12',
+		'win' => '1, 3, 5, 11',
 	],
 	'7' => [
 		/**
