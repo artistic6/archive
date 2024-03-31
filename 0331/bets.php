@@ -31,6 +31,7 @@ return [
 		Race 4
 		*/
 		'favorites' => '14, 3',
+		'inter(fav 3, fav 14)' => '14',
 	],
 	'5' => [
 		/**

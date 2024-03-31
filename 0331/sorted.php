@@ -38,6 +38,7 @@ return [
 		*/
 		'favorites' => '3, 10, 14',
 		'inter(fav 3, fav 10)' => '4',
+		'inter(fav 3, fav 14)' => '14',
 	],
 	'5' => [
 		/**
