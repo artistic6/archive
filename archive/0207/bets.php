@@ -67,7 +67,8 @@ return [
 		Race 8
 		*/
 		'favorites' => '11, 4',
-		'inter(fav 4, fav 11)' => '4, 9',
+		'inter(fav 4, fav 11)' => '3, 4, 9',
+		'union' => '3, 4, 9',
 	],
 	'9' => [
 		/**

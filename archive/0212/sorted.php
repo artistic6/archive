@@ -90,8 +90,8 @@ return [
 		'favorites' => '1, 5, 8',
 		'inter(fav 1, fav 5)' => '5, 8, 10, 12',
 		'inter(fav 1, fav 8)' => '1, 5, 8',
-		'inter(fav 5, fav 8)' => '5, 8',
-		'union' => '1, 5, 8, 10, 12',
+		'inter(fav 5, fav 8)' => '3, 5, 8',
+		'union' => '1, 3, 5, 8, 10, 12',
 	],
 	'10' => [
 		/**

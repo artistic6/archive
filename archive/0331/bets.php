@@ -61,23 +61,35 @@ return [
 		*/
 		'favorites' => '1, 14, 4',
 		'additional favorites' => '10, 13',
-		'inter(fav 1, fav 4)' => '1, 6, 7',
-		'inter(fav 1, fav 10)' => '7',
-		'inter(fav 4, fav 10)' => '2, 4, 7, 9',
-		'union' => '1, 2, 4, 6, 7, 9',
+		'inter(fav 1, fav 4)' => '1, 3, 6, 7',
+		'inter(fav 1, fav 10)' => '3, 7',
+		'inter(fav 1, fav 13)' => '3',
+		'inter(fav 1, fav 14)' => '3',
+		'inter(fav 4, fav 10)' => '2, 3, 4, 7, 9',
+		'inter(fav 4, fav 13)' => '3',
+		'inter(fav 4, fav 14)' => '3',
+		'inter(fav 10, fav 13)' => '3',
+		'inter(fav 10, fav 14)' => '3',
+		'inter(fav 13, fav 14)' => '3',
+		'union' => '1, 2, 3, 4, 6, 7, 9',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
 		'favorites' => '13, 8, 10',
-		'inter(fav 8, fav 10)' => '1, 5',
+		'inter(fav 8, fav 10)' => '1, 3, 5',
+		'inter(fav 8, fav 13)' => '3',
+		'inter(fav 10, fav 13)' => '3',
+		'union' => '1, 3, 5',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
 		'favorites' => '8, 7, 1',
+		'inter(fav 1, fav 7)' => '7',
+		'inter(fav 1, fav 8)' => '7',
 		'inter(fav 7, fav 8)' => '7, 8',
 	],
 ];

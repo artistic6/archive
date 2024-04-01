@@ -78,8 +78,10 @@ return [
 		Race 8
 		*/
 		'favorites' => '1, 4, 14',
-		'inter(fav 1, fav 4)' => '1, 6, 7',
-		'union' => '1, 6, 7',
+		'inter(fav 1, fav 4)' => '1, 3, 6, 7',
+		'inter(fav 1, fav 14)' => '3',
+		'inter(fav 4, fav 14)' => '3',
+		'union' => '1, 3, 6, 7',
 		'win' => '1, 4, 14',
 	],
 	'9' => [
@@ -87,12 +89,15 @@ return [
 		Race 9
 		*/
 		'favorites' => '9, 10, 13',
+		'inter(fav 10, fav 13)' => '3',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
 		'favorites' => '1, 7, 8',
+		'inter(fav 1, fav 7)' => '7',
+		'inter(fav 1, fav 8)' => '7',
 		'inter(fav 7, fav 8)' => '7, 8',
 	],
 ];
