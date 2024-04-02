@@ -40,8 +40,9 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '3',
-		'win hist(fav 3)' => '1, 2, 3, 5, 7, 9',
+		'favorites' => '3, 2',
+		'inter(fav 2, fav 3)' => '2, 3, 5',
+		'union' => '2, 3, 5',
 	],
 	'7' => [
 		/**
