@@ -26,8 +26,11 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '2, 10',
+		'favorites' => '2, 10, 1',
+		'inter(fav 1, fav 2)' => '2, 3, 5, 10, 11',
+		'inter(fav 1, fav 10)' => '10',
 		'inter(fav 2, fav 10)' => '10, 12',
+		'union' => '2, 3, 5, 10, 11, 12',
 	],
 	'5' => [
 		/**
