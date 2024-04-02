@@ -27,9 +27,13 @@ return [
 		Race 4
 		*/
 		'favorites' => '2, 10, 1',
+		'additional favorites' => '12',
 		'inter(fav 1, fav 2)' => '2, 3, 5, 10, 11',
 		'inter(fav 1, fav 10)' => '10',
+		'inter(fav 1, fav 12)' => '3',
 		'inter(fav 2, fav 10)' => '10, 12',
+		'inter(fav 2, fav 12)' => '3, 12',
+		'inter(fav 10, fav 12)' => '12',
 		'union' => '2, 3, 5, 10, 11, 12',
 	],
 	'5' => [
