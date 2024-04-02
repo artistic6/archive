@@ -47,15 +47,17 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '13',
-		'win hist(fav 13)' => '',
+		'favorites' => '13, 10',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
-		'favorites' => '5, 6',
+		'favorites' => '5, 6, 7',
 		'inter(fav 5, fav 6)' => '4, 8, 11',
-		'union' => '4, 8, 11',
+		'inter(fav 5, fav 7)' => '3, 4, 5',
+		'inter(fav 6, fav 7)' => '4',
+		'union' => '3, 4, 5, 8, 11',
+		'win' => '5, 6, 7',
 	],
 ];
