@@ -64,10 +64,14 @@ return [
 		Race 8
 		*/
 		'favorites' => '5, 6, 7',
+		'additional favorites' => '4',
+		'inter(fav 4, fav 5)' => '3, 4, 7, 8',
+		'inter(fav 4, fav 6)' => '4, 6, 8, 9, 12',
+		'inter(fav 4, fav 7)' => '1, 2, 3, 4',
 		'inter(fav 5, fav 6)' => '4, 8, 11',
 		'inter(fav 5, fav 7)' => '3, 4, 5',
 		'inter(fav 6, fav 7)' => '4',
-		'union' => '3, 4, 5, 8, 11',
-		'win' => '5, 6, 7',
+		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
+		'win' => '4, 5, 6, 7',
 	],
 ];
