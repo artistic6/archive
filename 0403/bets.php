@@ -5,8 +5,8 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '3',
-		'win hist(fav 3)' => '1, 2, 3, 4, 5, 6, 7, 10',
+		'favorites' => '3, 12',
+		'inter(fav 3, fav 12)' => '10',
 	],
 	'2' => [
 		/**
@@ -26,8 +26,8 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '2',
-		'win hist(fav 2)' => '2, 3, 5, 7, 9, 10, 11, 12',
+		'favorites' => '2, 10',
+		'inter(fav 2, fav 10)' => '10, 12',
 	],
 	'5' => [
 		/**
