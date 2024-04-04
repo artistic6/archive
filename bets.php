@@ -53,10 +53,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $favorites = array_merge($favorites, $addedFavorites);
     sort($favorites);
     $union = [];
-    if(count($favorites) === 1){
-        $winF = array_intersect($history[$raceNumber][$favorite]['win'], $runners);
-        $racetext .= "\t\t'win hist(fav $favorite)' => '" . implode(", ", $winF) . "',\n"; 
-    }
     foreach($favorites as $one){
         $win1 = array_intersect($history[$raceNumber][$one]['win'], $runners);
         // if(count($win1) < 6) continue;
@@ -73,11 +69,14 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             }
         }
     }
-    if(count($union) >= 3){
+    if(count($union) >= 3 && count($favorites) < 6 && !in_array(10, $favorites)){
         sort($union);
         $racetext .= "\t\t'union' => '" . implode(", ", $union) . "',\n";
-        if(count($favorites) >= 3 && count($favorites) < 6 && !in_array(10, $favorites) && !in_array(10, $union)) {
-            $racetext .= "\t\t'win' => '" . implode(", ", $favorites) . "',\n";
+        // if(count($favorites) >= 3 && count($favorites) < 6 && !in_array(10, $favorites) && !in_array(10, $union)) {
+        if(count($favorites) >= 3) {
+            $racetext .= "\t\t'win/qqpl/trio' => '" . implode(", ", $favorites) . "',\n";
+            $diff = array_diff($union, $favorites);
+            $racetext .= "\t\t'win' => '" . implode(", ", $diff) . "',\n";
         }
     }
     $racetext .= "\t],\n";

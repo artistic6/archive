@@ -29,7 +29,8 @@ return [
 		*/
 		'favorites' => '2, 7, 10',
 		'inter(fav 2, fav 7)' => '1, 5, 12',
-		'union' => '1, 5, 12',
+		'inter(fav 7, fav 10)' => '3',
+		'union' => '1, 3, 5, 12',
 	],
 	'4' => [
 		/**

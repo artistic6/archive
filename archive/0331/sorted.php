@@ -6,9 +6,9 @@ return [
 		Race 1
 		*/
 		'favorites' => '3, 8, 14',
-		'inter(fav 3, fav 8)' => '1, 2, 3, 5, 10',
+		'inter(fav 3, fav 8)' => '1, 2, 3, 5, 10, 12',
 		'inter(fav 8, fav 14)' => '8',
-		'union' => '1, 2, 3, 5, 8, 10',
+		'union' => '1, 2, 3, 5, 8, 10, 12',
 	],
 	'2' => [
 		/**
@@ -39,6 +39,8 @@ return [
 		'favorites' => '3, 10, 14',
 		'inter(fav 3, fav 10)' => '4',
 		'inter(fav 3, fav 14)' => '14',
+		'inter(fav 10, fav 14)' => '1',
+		'union' => '1, 4, 14',
 	],
 	'5' => [
 		/**
