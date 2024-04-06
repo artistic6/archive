@@ -5,9 +5,9 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '12',
+		'favorites' => '12, 7',
 		'win hist(fav 12)' => '10, 12',//count: 2
-		'all' => '10, 12',//count: 2
+		'all' => '7, 10, 12',//count: 3
 	],
 	'2' => [
 		/**
