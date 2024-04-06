@@ -13,9 +13,9 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '10',
+		'favorites' => '10, 5',
 		'win hist(fav 10)' => '10',//count: 1
-		'all' => '10',//count: 1
+		'all' => '5, 10',//count: 2
 	],
 	'3' => [
 		/**
