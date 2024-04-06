@@ -48,19 +48,24 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '1, 3, 4, 6, 8',
+		'favorites' => '1, 2, 3, 4, 6, 8',
+		'inter(fav 1, fav 2)' => '1, 2, 7',
 		'inter(fav 1, fav 3)' => '1, 3, 4, 5, 7',
 		'inter(fav 1, fav 4)' => '1, 2, 3, 4, 5, 7',
 		'inter(fav 1, fav 6)' => '3, 4, 7',
 		'inter(fav 1, fav 8)' => '1, 2, 4, 5, 7',
+		'inter(fav 2, fav 3)' => '1, 7',
+		'inter(fav 2, fav 4)' => '1, 2, 7',
+		'inter(fav 2, fav 6)' => '7, 9',
+		'inter(fav 2, fav 8)' => '1, 2, 7, 8, 9',
 		'inter(fav 3, fav 4)' => '1, 3, 4, 5, 7',
 		'inter(fav 3, fav 6)' => '3, 4, 7',
 		'inter(fav 3, fav 8)' => '1, 4, 5, 7',
 		'inter(fav 4, fav 6)' => '3, 4, 6, 7',
 		'inter(fav 4, fav 8)' => '1, 2, 4, 5, 7',
 		'inter(fav 6, fav 8)' => '4, 7, 9',
-		'union' => '1, 2, 3, 4, 5, 6, 7, 9',
-		'win' => '1, 3, 4, 6, 8',
+		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
+		'win' => '1, 2, 3, 4, 6, 8',
 	],
 	'6' => [
 		/**
@@ -77,12 +82,14 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '1, 2, 3',
+		'favorites' => '1, 2, 3, 11',
 		'inter(fav 1, fav 2)' => '1, 2, 4, 5, 7, 9',
 		'inter(fav 1, fav 3)' => '1, 2, 9',
+		'inter(fav 1, fav 11)' => '5',
 		'inter(fav 2, fav 3)' => '1, 2, 3, 9',
-		'union' => '1, 2, 3, 4, 5, 7, 9',
-		'win' => '1, 2, 3',
+		'inter(fav 2, fav 11)' => '5, 6',
+		'union' => '1, 2, 3, 4, 5, 6, 7, 9',
+		'win' => '1, 2, 3, 11',
 	],
 	'8' => [
 		/**
@@ -113,8 +120,12 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '1, 3, 9',
+		'favorites' => '1, 3, 5, 9',
 		'inter(fav 1, fav 3)' => '4',
+		'inter(fav 1, fav 5)' => '4',
+		'inter(fav 3, fav 5)' => '3, 4',
 		'inter(fav 3, fav 9)' => '11',
+		'union' => '3, 4, 11',
+		'win' => '1, 3, 5, 9',
 	],
 ];
