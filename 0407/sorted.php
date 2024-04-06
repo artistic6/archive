@@ -48,12 +48,15 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '3, 6, 8',
+		'favorites' => '1, 3, 6, 8',
+		'inter(fav 1, fav 3)' => '1, 3, 4, 5, 7',
+		'inter(fav 1, fav 6)' => '3, 4, 7',
+		'inter(fav 1, fav 8)' => '1, 2, 4, 5, 7',
 		'inter(fav 3, fav 6)' => '3, 4, 7',
 		'inter(fav 3, fav 8)' => '1, 4, 5, 7',
 		'inter(fav 6, fav 8)' => '4, 7, 9',
-		'union' => '1, 3, 4, 5, 7, 9',
-		'win' => '3, 6, 8',
+		'union' => '1, 2, 3, 4, 5, 7, 9',
+		'win' => '1, 3, 6, 8',
 	],
 	'6' => [
 		/**
