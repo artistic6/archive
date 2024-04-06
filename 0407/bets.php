@@ -53,7 +53,7 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '3',
+		'favorites' => '3, 1',
 		'win hist(fav 3)' => '1, 2, 3, 9, 10',//count: 5
 		'all' => '1, 2, 3, 9, 10',//count: 5
 	],
