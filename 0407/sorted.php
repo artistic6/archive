@@ -5,23 +5,29 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '3, 7, 12',
+		'favorites' => '3, 6, 7, 12, 13',
+		'inter(fav 3, fav 6)' => '1, 2, 4, 6, 7, 12',
 		'inter(fav 3, fav 7)' => '3, 5, 7',
 		'inter(fav 3, fav 12)' => '10, 12',
-		'union' => '3, 5, 7, 10, 12',
+		'inter(fav 6, fav 7)' => '7',
+		'inter(fav 6, fav 12)' => '12',
+		'union' => '1, 2, 3, 4, 5, 6, 7, 10, 12',
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
-		'favorites' => '3, 4, 5, 10, 11',
+		'favorites' => '3, 4, 5, 9, 10, 11',
 		'inter(fav 3, fav 4)' => '4, 5, 7, 12',
 		'inter(fav 3, fav 5)' => '4, 5, 10',
+		'inter(fav 3, fav 9)' => '2, 4, 6',
 		'inter(fav 3, fav 10)' => '10',
 		'inter(fav 3, fav 11)' => '11',
 		'inter(fav 4, fav 5)' => '4, 5',
+		'inter(fav 4, fav 9)' => '3, 4',
+		'inter(fav 5, fav 9)' => '4',
 		'inter(fav 5, fav 10)' => '10',
-		'union' => '4, 5, 7, 10, 11, 12',
+		'union' => '2, 3, 4, 5, 6, 7, 10, 11, 12',
 	],
 	'3' => [
 		/**
@@ -109,26 +115,34 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '2, 3, 7',
+		'favorites' => '2, 3, 5, 7, 11',
 		'inter(fav 2, fav 3)' => '5, 6',
+		'inter(fav 2, fav 5)' => '4, 5, 11',
 		'inter(fav 2, fav 7)' => '2, 4, 5',
+		'inter(fav 2, fav 11)' => '4, 9',
+		'inter(fav 3, fav 5)' => '5, 7, 8, 12',
 		'inter(fav 3, fav 7)' => '1, 5, 12',
-		'union' => '1, 2, 4, 5, 6, 12',
-		'win' => '2, 3, 7',
+		'inter(fav 5, fav 7)' => '3, 4, 5, 12',
+		'inter(fav 5, fav 11)' => '3, 4',
+		'inter(fav 7, fav 11)' => '3, 4',
+		'union' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12',
+		'win' => '2, 3, 5, 7, 11',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'favorites' => '2, 4, 7, 11',
+		'favorites' => '2, 4, 7, 11, 14',
 		'inter(fav 2, fav 4)' => '4, 5, 6',
 		'inter(fav 2, fav 7)' => '5, 6',
 		'inter(fav 2, fav 11)' => '1, 3, 5',
+		'inter(fav 2, fav 14)' => '3',
 		'inter(fav 4, fav 7)' => '5, 6, 9',
 		'inter(fav 4, fav 11)' => '5, 9',
 		'inter(fav 7, fav 11)' => '5, 9, 12',
+		'inter(fav 11, fav 14)' => '3',
 		'union' => '1, 3, 4, 5, 6, 9, 12',
-		'win' => '2, 4, 7, 11',
+		'win' => '2, 4, 7, 11, 14',
 	],
 	'10' => [
 		/**
