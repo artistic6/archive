@@ -27,22 +27,29 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '2, 4, 9',
+		'favorites' => '2, 4, 6, 9',
 		'inter(fav 2, fav 4)' => '2, 5, 8',
+		'inter(fav 2, fav 6)' => '1, 5',
+		'inter(fav 4, fav 6)' => '3, 4, 5, 6',
 		'inter(fav 4, fav 9)' => '3',
-		'union' => '2, 3, 5, 8',
-		'win' => '2, 4, 9',
+		'inter(fav 6, fav 9)' => '3',
+		'union' => '1, 2, 3, 4, 5, 6, 8',
+		'win' => '2, 4, 6, 9',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
-		'favorites' => '2, 3, 7, 8',
+		'favorites' => '2, 3, 6, 7, 8',
 		'inter(fav 2, fav 3)' => '3, 5, 11',
+		'inter(fav 2, fav 6)' => '5, 10, 11, 12',
 		'inter(fav 2, fav 7)' => '7, 10',
 		'inter(fav 2, fav 8)' => '1, 3, 11',
+		'inter(fav 3, fav 6)' => '4, 5, 6, 11',
 		'inter(fav 3, fav 8)' => '3, 8, 11',
-		'union' => '1, 3, 5, 7, 8, 10, 11',
+		'inter(fav 6, fav 7)' => '10',
+		'inter(fav 6, fav 8)' => '11',
+		'union' => '1, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 	],
 	'5' => [
 		/**
