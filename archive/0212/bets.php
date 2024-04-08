@@ -31,7 +31,6 @@ return [
 		'official win' => '1, 3, 10',
 		'win hist' => '1, 3, 4, 5, 6, 12',//count: 6
 		'all' => '1, 3, 4, 5, 6, 12',//count: 6
-		'place' => '3',
 	],
 	'4' => [
 		/**
@@ -42,10 +41,7 @@ return [
 		'win hist' => '1, 4, 10, 12',//count: 4
 		'qin/trio' => '1, 2, 10',
 		'all' => '1, 2, 4, 10, 12',//count: 5
-		'place' => '1',
 		'place' => '4',
-		'place' => '10',
-		'place' => '10',
 		'place' => '10',
 	],
 	'5' => [
