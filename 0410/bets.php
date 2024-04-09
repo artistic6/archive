@@ -24,10 +24,12 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '3, 8',
+		'favorites' => '3, 5, 8',
 		'win hist' => '1, 2, 3, 8',//count: 4
+		'qin/trio' => '3, 5, 8',
+		'place' => '3',
 		'place' => '8',
-		'historic' => '8',
+		'historic' => '3, 8',
 	],
 	'4' => [
 		/**
