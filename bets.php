@@ -23,10 +23,13 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(!isset($allRacesOdds[$raceNumber])) continue;
     if(isset($oldData)){
         if(isset($oldData[$raceNumber]['favorites'])) $oldFavorites = explode(", ", $oldData[$raceNumber]['favorites']);
+        if(isset($oldData[$raceNumber]['historic'])) $oldHistoric = explode(", ", $oldData[$raceNumber]['historic']);
         if(isset($oldData[$raceNumber]['official win'])) $officialWin = explode(", ", $oldData[$raceNumber]['official win']);
     }
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
+    if(isset($oldHistoric)) $historic = $oldHistoric;
+    else $historic = [];
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
@@ -58,12 +61,19 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
         foreach($favorites as $X){
             if(isset($matrix[$raceNumber][$X][$candidate]) && $matrix[$raceNumber][$X][$candidate] === true){
                 $racetext .= "\t\t'place' => '" . $candidate . "',\n"; 
+                if(!in_array($candidate, $historic)) $historic[] = $candidate;
             }
         }
+    }
+    sort($historic);
+    if(!empty($historic)){
+        $racetext .= "\t\t'historic' => '" . implode(", ", $historic) . "',\n"; 
     }
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
+    unset($oldHistoric);
+    unset($historic);
     $outtext .= $racetext;
 }
 $outtext .= "];\n";

@@ -10,6 +10,7 @@ return [
 		'all' => '3, 5, 7',//count: 3
 		'place' => '7',
 		'place' => '7',
+		'historic' => '7',
 	],
 	'2' => [
 		/**
@@ -19,6 +20,7 @@ return [
 		'win hist' => '2, 4, 5, 6, 7, 8, 10, 11, 12',//count: 9
 		'all' => '2, 3, 4, 5, 6, 7, 8, 10, 11, 12',//count: 10
 		'place' => '2',
+		'historic' => '2',
 	],
 	'3' => [
 		/**
@@ -36,6 +38,7 @@ return [
 		'win hist' => '1, 2, 3, 5, 6, 10, 11',//count: 7
 		'all' => '1, 2, 3, 5, 6, 10, 11',//count: 7
 		'place' => '2',
+		'historic' => '2',
 	],
 	'5' => [
 		/**
@@ -44,6 +47,7 @@ return [
 		'favorites' => '5, 11',
 		'win hist' => '',//count: 0
 		'all' => '5, 11',//count: 2
+		'historic' => '5',
 	],
 	'6' => [
 		/**
@@ -53,6 +57,7 @@ return [
 		'win hist' => '1, 2, 4, 6, 7, 10, 11, 12',//count: 8
 		'all' => '1, 2, 4, 6, 7, 10, 11, 12',//count: 8
 		'place' => '7',
+		'historic' => '7',
 	],
 	'7' => [
 		/**
@@ -64,6 +69,7 @@ return [
 		'place' => '3',
 		'place' => '3',
 		'place' => '8',
+		'historic' => '3, 8',
 	],
 	'8' => [
 		/**
@@ -79,14 +85,16 @@ return [
 		'place' => '8',
 		'place' => '9',
 		'place' => '9',
+		'historic' => '3, 7, 8, 9',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'favorites' => '9',
+		'favorites' => '2, 9',
 		'win hist' => '12',//count: 1
-		'all' => '9, 12',//count: 2
+		'all' => '2, 9, 12',//count: 3
 		'place' => '12',
+		'historic' => '12',
 	],
 ];
