@@ -5,8 +5,9 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '5, 7',
+		'favorites' => '5, 6, 7',
 		'win hist' => '3, 5, 7',//count: 3
+		'qin/trio' => '5, 6, 7',
 		'place' => '7',
 		'place' => '7',
 		'historic' => '7',
