@@ -73,15 +73,10 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '2, 3, 4',
-		'win hist' => '1, 2, 3, 4, 6, 7, 8, 9, 12',//count: 9
-		'qin/trio' => '2, 3, 4',
+		'favorites' => '2, 3, 4, 7',
+		'win hist' => '1, 2, 3, 4, 5, 12',//count: 6
+		'qin/trio' => '2, 3, 4, 7',
 		'place' => '3',
-		'place' => '7',
-		'place' => '8',
-		'place' => '8',
-		'place' => '9',
-		'place' => '9',
 		'historic' => '3, 7, 8, 9',
 	],
 	'9' => [
