@@ -54,9 +54,6 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     if(count($favorites) >= 3){
         $racetext .= "\t\t'qin/trio' => '" . implode(", ", $favorites) . "',\n";
     }
-    $all = array_values(array_unique(array_merge($favorites, $win)));
-    sort($all);
-    $racetext .= "\t\t'all' => '" . implode(", ", $all) . "',//count: " . count($all) . "\n"; 
     foreach($win as $candidate){
         foreach($favorites as $X){
             if(isset($matrix[$raceNumber][$X][$candidate]) && $matrix[$raceNumber][$X][$candidate] === true){
