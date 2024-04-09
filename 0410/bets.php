@@ -69,12 +69,16 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '2, 3',
-		'win hist' => '1, 3, 5, 6, 7, 8, 12',//count: 7
-		'all' => '1, 2, 3, 5, 6, 7, 8, 12',//count: 8
+		'favorites' => '2, 3, 4',
+		'win hist' => '1, 2, 3, 4, 6, 7, 8, 9, 12',//count: 9
+		'qin/trio' => '2, 3, 4',
+		'all' => '1, 2, 3, 4, 6, 7, 8, 9, 12',//count: 9
 		'place' => '3',
 		'place' => '7',
 		'place' => '8',
+		'place' => '8',
+		'place' => '9',
+		'place' => '9',
 	],
 	'9' => [
 		/**
