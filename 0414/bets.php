@@ -45,10 +45,10 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '5',
+		'favorites' => '3, 5',
 		'Favs 5, 1' => 'true',
 		'Favs 5, 12' => 'true',
-		'win hist' => '1, 6, 11',//count: 3
+		'win hist' => '1, 2, 3, 5, 6, 7, 9, 11',//count: 8
 	],
 	'7' => [
 		/**
