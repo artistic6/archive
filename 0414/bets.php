@@ -23,11 +23,13 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '9',
+		'favorites' => '9, 13',
 		'Favs 9, 2' => 'true',
 		'Favs 9, 8' => 'true',
 		'Favs 9, 12' => 'true',
-		'win hist' => '3, 7, 12',//count: 3
+		'Favs 13, 2' => 'true',
+		'Favs 13, 11' => 'true',
+		'win hist' => '2, 3, 7, 12',//count: 4
 	],
 	'4' => [
 		/**
@@ -84,12 +86,12 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '1, 6, 14',
+		'favorites' => '1, 6, 10, 14',
 		'Favs 1, 3' => 'true',
 		'Favs 1, 5' => 'true',
 		'Favs 6, 1' => 'true',
 		'Favs 14, 2' => 'true',
-		'win hist' => '1, 2, 4, 7, 10, 13, 14',//count: 7
+		'win hist' => '1, 2, 4, 5, 7, 9, 10, 13, 14',//count: 9
 		'sure place' => '1',
 	],
 	'11' => [
