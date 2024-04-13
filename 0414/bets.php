@@ -84,10 +84,11 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '1',
+		'favorites' => '1, 14',
 		'Favs 1, 3' => 'true',
 		'Favs 1, 5' => 'true',
-		'win hist' => '1, 4, 7, 10, 14',//count: 5
+		'Favs 14, 2' => 'true',
+		'win hist' => '1, 2, 4, 7, 10, 14',//count: 6
 	],
 	'11' => [
 		/**
