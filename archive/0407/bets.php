@@ -6,6 +6,7 @@ return [
 		Race 1
 		*/
 		'favorites' => '7, 12',
+		'Favs 12, 9' => 'true',
 		'win hist' => '2, 3, 5, 7, 8, 10, 12',//count: 7
 	],
 	'2' => [
@@ -13,9 +14,13 @@ return [
 		Race 2
 		*/
 		'favorites' => '4, 5, 10',
+		'Favs 10, 1' => 'true',
+		'Favs 10, 7' => 'true',
+		'Favs 10, 10' => 'true',
 		'win hist' => '3, 4, 5, 7, 10, 12',//count: 6
-		'place' => '7',
-		'place' => '10',
+		'place' => '7, 10',
+		'bet' => '10',
+		'sure place' => '10',
 	],
 	'3' => [
 		/**
@@ -29,8 +34,12 @@ return [
 		Race 4
 		*/
 		'favorites' => '4, 8',
+		'Favs 4, 8' => 'true',
+		'Favs 8, 7' => 'true',
 		'win hist' => '1, 2, 3, 4, 8, 9, 11, 12',//count: 8
 		'place' => '8',
+		'bet' => '8',
+		'sure place' => '8',
 	],
 	'5' => [
 		/**
@@ -44,16 +53,20 @@ return [
 		Race 6
 		*/
 		'favorites' => '1, 2, 4',
+		'Favs 4, 1' => 'true',
+		'Favs 4, 2' => 'true',
+		'Favs 4, 4' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',//count: 12
-		'place' => '1',
-		'place' => '2',
-		'place' => '4',
+		'place' => '1, 2, 4',
+		'bet' => '4',
+		'sure place' => '4',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
 		'favorites' => '1, 3',
+		'Favs 1, 12' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 7, 8, 9, 10',//count: 9
 	],
 	'8' => [
@@ -68,6 +81,7 @@ return [
 		Race 9
 		*/
 		'favorites' => '4, 7',
+		'Favs 7, 11' => 'true',
 		'win hist' => '4, 5, 6, 7, 9, 12',//count: 6
 	],
 	'10' => [
@@ -75,10 +89,14 @@ return [
 		Race 10
 		*/
 		'favorites' => '1, 3, 9',
+		'Favs 1, 3' => 'true',
+		'Favs 1, 5' => 'true',
+		'Favs 3, 3' => 'true',
+		'Favs 9, 1' => 'true',
+		'Favs 9, 3' => 'true',
 		'win hist' => '1, 2, 3, 4, 6, 7, 10, 11',//count: 8
-		'place' => '1',
-		'place' => '3',
-		'place' => '3',
-		'place' => '3',
+		'place' => '1, 3',
+		'bet' => '1, 3',
+		'sure place' => '1, 3',
 	],
 ];
