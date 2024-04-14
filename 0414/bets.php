@@ -98,7 +98,7 @@ return [
 		/**
 		Race 11
 		*/
-		'favorites' => '2, 5',
+		'favorites' => '2, 5, 9',
 		'Favs 5, 12' => 'true',
 		'win hist' => '1, 2, 12',//count: 3
 	],
