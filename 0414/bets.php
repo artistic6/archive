@@ -12,11 +12,11 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '4, 10, 11',
+		'favorites' => '2, 4, 10, 11',
 		'Favs 10, 1' => 'true',
 		'Favs 10, 7' => 'true',
 		'Favs 10, 10' => 'true',
-		'win hist' => '3, 4, 5, 7, 8, 10, 11, 12',//count: 8
+		'win hist' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count: 11
 		'sure place' => '10',
 	],
 	'3' => [
