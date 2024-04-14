@@ -71,11 +71,14 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
             }
         }
     }
+    if(!empty($place)){
+        $racetext .= "\t\t'place 1' => '" . implode(", ", $place) . "',\n"; 
+    }
     $inter = array_intersect($L, $R);
-    $sure = array_intersect($place, $inter);
-    if(!empty($sure)){
-        $racetext .= "\t\t'sure place' => '" . implode(", ", $sure) . "',\n"; 
-  }
+    if(!empty($inter)){
+          $racetext .= "\t\t'place 2' => '" . implode(", ", $inter) . "',\n"; 
+    }
+   
     $racetext .= "\t],\n";
     unset($oldFavorites);
     unset($favorites);
