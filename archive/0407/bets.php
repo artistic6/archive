@@ -6,22 +6,22 @@ return [
 		Race 1
 		*/
 		'favorites' => '7, 12',
-		'Favs 12, 9' => 'true',
 		'official win' => '7, 13, 2',
+		'Favs 12, 9' => 'true',
 		'win hist' => '2, 3, 5, 7, 8, 10, 12',//count: 7
+		'shit' => '9, 12',
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
 		'favorites' => '4, 5, 10',
+		'official win' => '10, 14, 7',
 		'Favs 10, 1' => 'true',
 		'Favs 10, 7' => 'true',
 		'Favs 10, 10' => 'true',
-		'official win' => '10, 14, 7',
 		'win hist' => '3, 4, 5, 7, 10, 12',//count: 6
-		'place 1' => '7, 10',
-		'place 2' => '10',
+		'shit' => '1, 7, 10',
 	],
 	'3' => [
 		/**
@@ -36,12 +36,11 @@ return [
 		Race 4
 		*/
 		'favorites' => '4, 8',
+		'official win' => '2, 8, 5',
 		'Favs 4, 8' => 'true',
 		'Favs 8, 7' => 'true',
-		'official win' => '2, 8, 5',
 		'win hist' => '1, 2, 3, 4, 8, 9, 11, 12',//count: 8
-		'place 1' => '8',
-		'place 2' => '8',
+		'shit' => '4, 7, 8',
 	],
 	'5' => [
 		/**
@@ -56,22 +55,23 @@ return [
 		Race 6
 		*/
 		'favorites' => '1, 2, 4',
+		'official win' => '4, 1, 2',
 		'Favs 4, 1' => 'true',
 		'Favs 4, 2' => 'true',
 		'Favs 4, 4' => 'true',
-		'official win' => '4, 1, 2',
 		'win hist' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',//count: 12
-		'place 1' => '1, 2, 4',
-		'place 2' => '4',
+		'shit' => '1, 2, 4',
+		'gold' => '2',
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
 		'favorites' => '1, 3',
-		'Favs 1, 12' => 'true',
 		'official win' => '1, 8, 5',
+		'Favs 1, 12' => 'true',
 		'win hist' => '1, 2, 3, 4, 5, 7, 8, 9, 10',//count: 9
+		'shit' => '1, 12',
 	],
 	'8' => [
 		/**
@@ -86,23 +86,23 @@ return [
 		Race 9
 		*/
 		'favorites' => '4, 7',
-		'Favs 7, 11' => 'true',
 		'official win' => '7, 2, 14',
+		'Favs 7, 11' => 'true',
 		'win hist' => '4, 5, 6, 7, 9, 12',//count: 6
+		'shit' => '7, 11',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
 		'favorites' => '1, 3, 9',
+		'official win' => '10, 1, 3',
 		'Favs 1, 3' => 'true',
 		'Favs 1, 5' => 'true',
 		'Favs 3, 3' => 'true',
 		'Favs 9, 1' => 'true',
 		'Favs 9, 3' => 'true',
-		'official win' => '10, 1, 3',
 		'win hist' => '1, 2, 3, 4, 6, 7, 10, 11',//count: 8
-		'place 1' => '1, 3',
-		'place 2' => '1, 3',
+		'shit' => '1, 3, 5, 9',
 	],
 ];
