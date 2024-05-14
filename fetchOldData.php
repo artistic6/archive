@@ -50,7 +50,7 @@ foreach($matrix as $raceDate => $data){
     foreach($data as $raceNumber => $favorites){
         $outtext .= "\t\t$raceNumber => [" . implode(", ", $favorites) ."]\n";
     }
-    $outtext .= "\t];\n";
+    $outtext .= "\t],\n";
 }
 $outtext .= "];\n?>";
 file_put_contents($outFile, $outtext);
