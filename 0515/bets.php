@@ -32,15 +32,17 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '6, 7',
-		'union' => '5, 10, 11',//count: 3
-		'inter' => '',
+		'favorites' => '3, 6, 7',
+		'union' => '3, 4, 5, 6, 10, 11',//count: 6
+		'inter' => '3, 6',
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
-		'favorites' => '4',
+		'favorites' => '2, 4',
+		'union' => '2',//count: 1
+		'inter' => '2',
 	],
 	'6' => [
 		/**
