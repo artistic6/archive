@@ -37,9 +37,9 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '6, 9',
-		'union' => '1, 2, 6, 7, 9',//count: 5
-		'inter' => '6, 9',
+		'favorites' => '4, 6, 9',
+		'union' => '1, 2, 4, 6, 7, 9',//count: 6
+		'inter' => '4, 6, 9',
 	],
 	'7' => [
 		/**
@@ -57,6 +57,8 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '3',
+		'favorites' => '2, 3',
+		'union' => '3, 5, 8',//count: 3
+		'inter' => '3',
 	],
 ];
