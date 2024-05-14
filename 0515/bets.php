@@ -5,7 +5,9 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '10',
+		'favorites' => '1, 10',
+		'union' => '1, 4, 5, 7, 8, 10, 11',//count: 7
+		'inter' => '1, 10',
 	],
 	'2' => [
 		/**
@@ -35,7 +37,9 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '6',
+		'favorites' => '6, 9',
+		'union' => '1, 2, 6, 7, 9',//count: 5
+		'inter' => '6, 9',
 	],
 	'7' => [
 		/**
