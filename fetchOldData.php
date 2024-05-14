@@ -7,7 +7,7 @@
  */
 
 $outFile = __DIR__ . DIRECTORY_SEPARATOR . "favorites.php";
-$outtext = "<?php\nreturn[\n";
+$outtext = "<?php\nreturn[\n"; 
 $matrix = [];
 $output = array();
 $history = array();
@@ -28,6 +28,7 @@ foreach($history as $version){
             $oddsFile2 = $raceDate . DIRECTORY_SEPARATOR . "getodds.php";
             if(file_exists($oddsFile1)) $oddsFile = $oddsFile1;
             elseif(file_exists($oddsFile2)) $oddsFile = $oddsFile2;
+            if(!isset($oddsFile)) continue;
             if(file_exists($oddsFile)){
                 $odds = include($oddsFile);
                 foreach($odds as $raceNumber => $raceOdds){
