@@ -20,10 +20,12 @@ foreach($output as $line){
 }
 exec("git config --global advice.detachedHead false");
 foreach($history as $version){
+    exec("git show --no-patch --format=%ci $version; ls",$year);
+    $year = substr($year, 0, 4);
     exec("git checkout $version; ls",$command_output);
     foreach($command_output as $raceDate){
         if(is_dir($raceDate) && preg_match("/^[0-9]+$/", $raceDate)) {
-            if(!isset($matrix[$raceDate])) $matrix[$raceDate] = [];
+            if(!isset($matrix["$year$raceDate"])) $matrix["$year$raceDate"] = [];
             $oddsFile1 = $raceDate . DIRECTORY_SEPARATOR . "odds.php";
             $oddsFile2 = $raceDate . DIRECTORY_SEPARATOR . "getodds.php";
             if(file_exists($oddsFile1)) $oddsFile = $oddsFile1;
@@ -35,10 +37,10 @@ foreach($history as $version){
                     asort($raceOdds);
                     $runners = array_keys($raceOdds);
                     $favorite = $runners[0];
-                    if(!isset($matrix[$raceDate][$raceNumber])) $matrix[$raceDate][$raceNumber] = [$favorite];
+                    if(!isset($matrix["$year$raceDate"][$raceNumber])) $matrix["$year$raceDate"][$raceNumber] = [$favorite];
                     else{
-                        if(!in_array($favorite, $matrix[$raceDate][$raceNumber])) $matrix[$raceDate][$raceNumber][] = $favorite;
-                        sort($matrix[$raceDate][$raceNumber]);
+                        if(!in_array($favorite, $matrix["$year$raceDate"][$raceNumber])) $matrix["$year$raceDate"][$raceNumber][] = $favorite;
+                        sort($matrix["$year$raceDate"][$raceNumber]);
                     }
                 }
             }
