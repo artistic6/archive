@@ -49,7 +49,7 @@ foreach($history as $version){
 foreach($matrix as $raceDate => $data){
     $outtext .= "\t$raceDate => [\n";
     foreach($data as $raceNumber => $favorites){
-        $outtext .= "\t\t$raceNumber => [" . implode(", ", $favorites) ."],\n";
+        $outtext .= "\t\t'$raceNumber' => [" . implode(", ", $favorites) ."],\n";
     }
     $outtext .= "\t],\n";
 }
