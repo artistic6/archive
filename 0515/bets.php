@@ -41,7 +41,7 @@ return [
 		Race 5
 		*/
 		'favorites' => '2, 4, 11',
-		'union' => '1, 2',//count: 2
+		'union' => '1, 2, 3, 5, 7, 9',//count: 6
 		'inter' => '2',
 	],
 	'6' => [
@@ -65,7 +65,7 @@ return [
 		Race 8
 		*/
 		'favorites' => '1, 3, 4',
-		'union' => '1, 3, 4, 6, 7, 8, 12',//count: 7
+		'union' => '1, 3, 4, 5, 6, 7, 8, 12',//count: 8
 		'inter' => '1, 3, 4',
 	],
 	'9' => [
@@ -73,7 +73,7 @@ return [
 		Race 9
 		*/
 		'favorites' => '2, 3, 9',
-		'union' => '3, 4, 5, 8, 12',//count: 5
-		'inter' => '3',
+		'union' => '2, 3, 4, 5, 8, 9, 12',//count: 7
+		'inter' => '2, 3, 9',
 	],
 ];
