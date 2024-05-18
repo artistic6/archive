@@ -78,8 +78,8 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '8, 10',
-		'union' => '7, 8, 12',//count: 3
+		'favorites' => '4, 8, 10',
+		'union' => '7, 8, 9, 11, 12',//count: 5
 		'inter' => '8',
 	],
 ];
