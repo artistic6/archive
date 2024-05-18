@@ -61,7 +61,9 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '3',
+		'favorites' => '3, 6',
+		'union' => '2, 3, 4, 5, 8, 12',//count: 6
+		'inter' => '3',
 	],
 	'10' => [
 		/**
