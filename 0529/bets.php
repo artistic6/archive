@@ -29,16 +29,15 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '6',
-		'union' => '3, 4, 5, 10, 11',
-		'inter' => '3, 4, 5, 10, 11',
+		'favorites' => '6, 14',
+		'union' => '3, 4, 5, 10, 11, 14',
 	],
 	'5' => [
 		/**
 		Race 5
 		*/
-		'favorites' => '9',
-		'union' => '5',
+		'favorites' => '5, 9',
+		'union' => '1, 4, 5',
 		'inter' => '5',
 	],
 	'6' => [
