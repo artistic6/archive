@@ -10,6 +10,36 @@ function combination($p, $n){
     if($n < $p) return 0;
     return factorial($n) / (factorial($p) * factorial($n - $p));
 }
+function getWeights($odds, $profit = 10, $precision = 10){
+    $weights = [];
+    $totalWeights = 0;
+    foreach($odds as $key => $value){
+        $weights[$key] = 1;
+        $totalWeights += $weights[$key];
+    }
+    $criterion = true;
+    foreach($odds as $key => $value){
+        $criterion = $criterion && ($weights[$key] * $odds[$key] >= $totalWeights + $profit);
+    }
+    $iterations = 0;
+    while($criterion === false){
+        $criterion = true;
+        foreach($odds as $key => $value){
+            if($weights[$key] * $odds[$key] < $totalWeights + $profit){
+                $weights[$key] +=1;
+                $totalWeights += 1;
+            }
+            $criterion = $criterion && ($weights[$key] * $odds[$key] >= $totalWeights + $profit);
+        }
+        $iterations ++;
+        if($iterations == $precision) {
+            $failed = [];
+            foreach($odds as $key => $value) $failed[$key] = 0;
+            return $failed;
+        }
+    }
+    return $weights;
+}
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $total = 0;
@@ -21,6 +51,8 @@ $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
 $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
+$winOddsFile = $currentDir . DIRECTORY_SEPARATOR . "winodds.php";
+if(file_exists($winOddsFile)) $allWinOdds = include($winOddsFile);
 if(file_exists($oddsFile)) $allRacesOdds = include($oddsFile);
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "history.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
@@ -98,9 +130,23 @@ for ($raceNumber = 1; $raceNumber <= $totalRaces; $raceNumber++) {
     $inter = array_intersect($favorites, $inter);
     if(count($inter) >= 2 && count($favorites) >= 3){
         $set2 = array_values(array_unique(array_merge($sums, $mults)));
+        if(isset($allWinOdds)){
+            $weights = [];
+            foreach($set2 as $winner){
+                $weights[$winner] = $allWinOdds[$raceNumber][$winner];
+            }
+            $bets = getWeights($weights);
+            $racetext .= "\t\t'Win Bets'  =>  [\n";
+            $total = 0;
+            foreach($bets as $horse => $bet){
+                $racetext .= "\t\t\t'$horse' => '" . 10 * $bet . " HKD',\n"  ;
+                $total += 10 * $bet;
+            }
+            $racetext .= "\t\t],\n";
+            $racetext .= "\t\t'Total Bets set 1'  =>  '$total HKD',\n";
+        }
         sort($set2);
         $set2 = array_diff($set2, $favorites);
-        $racetext .= "\t\t'set2' => '" . implode(", ", $set2) . "',\n"; 
         $unitBet = 20;
         $racetext .= "\t\t'win($" . 2 * $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $set3 = array_slice($favorites, 1, 2);
