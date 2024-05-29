@@ -47,7 +47,7 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '2, 5',
+		'favorites' => '1, 2, 5',
 	],
 ];
 //total win: 0
