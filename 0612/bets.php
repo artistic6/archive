@@ -50,6 +50,9 @@ return [
 		'trio pivots' => '2, 8',
 		'place($1000)' => '8',
 		'win($10)' => '1, 3, 4, 5, 6, 7, 9, 10, 11, 12',
+		'place($50)' => '2',
+		'place($50)' => '3',
+		'place($50)' => '8',
 	],
 	'5' => [
 		/**
@@ -113,7 +116,7 @@ return [
 	],
 ];
 //total win: -100
-//total place: -1000
+//total place: -1150
 //total qin: 0
 //total trio: 0
 //total: 0
