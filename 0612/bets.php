@@ -102,13 +102,13 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '3',
+		'favorites' => '3, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '3',
-		'qin inter' => '3',
-		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'qin inter' => '3, 11',
+		'win pivots' => '3',
+		'qin pivots' => '3, 11',
+		'trio pivots' => '3, 11',
 	],
 ];
 //total win: -110
