@@ -5,13 +5,13 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '6',
+		'favorites' => '3, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '6',
+		'win inter' => '',
 		'qin inter' => '6',
 		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'qin pivots' => '6',
+		'trio pivots' => '3, 6',
 	],
 	'2' => [
 		/**
