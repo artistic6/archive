@@ -17,13 +17,13 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '4',
+		'favorites' => '4, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '4',
-		'qin inter' => '4',
-		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'qin inter' => '4, 8',
+		'win pivots' => '4, 8',
+		'qin pivots' => '4, 8',
+		'trio pivots' => '4, 8',
 	],
 	'3' => [
 		/**
