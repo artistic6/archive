@@ -58,13 +58,17 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '2, 3, 8, 9',
+		'favorites' => '2, 3, 7, 8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win inter' => '',
 		'qin inter' => '',
-		'win pivots' => '2, 3, 8',
-		'qin pivots' => '2, 3, 8, 9',
-		'trio pivots' => '2, 3, 8, 9',
+		'win pivots' => '2, 3, 7, 8',
+		'qin pivots' => '2, 3, 7, 8, 9',
+		'trio pivots' => '2, 3, 7, 8, 9',
+		'win($10)' => '1, 4, 5, 6, 10',
+		'place($50)' => '1',
+		'place($50)' => '5',
+		'place($50)' => '6',
 	],
 	'6' => [
 		/**
@@ -119,8 +123,8 @@ return [
 		'place($50)' => '11',
 	],
 ];
-//total win: -600
-//total place: -1300
+//total win: -650
+//total place: -1450
 //total qin: 0
 //total trio: 0
 //total: 0
