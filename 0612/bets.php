@@ -66,13 +66,13 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '5',
+		'favorites' => '3, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '5',
 		'qin inter' => '5',
-		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'win pivots' => '5',
+		'qin pivots' => '5',
+		'trio pivots' => '5',
 	],
 	'7' => [
 		/**
@@ -90,13 +90,13 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '6, 11',
+		'favorites' => '6, 9, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'win inter' => '',
 		'qin inter' => '',
 		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'qin pivots' => '9',
+		'trio pivots' => '9',
 	],
 	'9' => [
 		/**
