@@ -89,13 +89,15 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '1, 4',
+		'favorites' => '1, 4, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win inter' => '4',//count: 1
-		'qin inter' => '1, 4',
-		'win pivots' => '4',
-		'qin pivots' => '1, 4',
-		'trio pivots' => '1, 4',
+		'qin inter' => '1, 4, 6',
+		'win pivots' => '4, 6',
+		'qin pivots' => '1, 4, 6',
+		'trio pivots' => '1, 4, 6',
+		'place($50)' => '1',
+		'place($50)' => '2',
 	],
 	'9' => [
 		/**
@@ -135,7 +137,7 @@ return [
 	],
 ];
 //total win: 0
-//total place: 0
+//total place: -100
 //total qin: 0
 //total trio: 0
 //total: 0
