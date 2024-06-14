@@ -17,25 +17,25 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '5',
+		'favorites' => '5, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '5',
-		'qin inter' => '5',
-		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'qin inter' => '5, 6',
+		'win pivots' => '5',
+		'qin pivots' => '5, 6',
+		'trio pivots' => '5, 6',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
-		'favorites' => '4',
+		'favorites' => '4, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '4',
-		'qin inter' => '4',
+		'win inter' => '',
+		'qin inter' => '12',
 		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'qin pivots' => '12',
+		'trio pivots' => '4, 12',
 	],
 	'4' => [
 		/**
@@ -77,13 +77,13 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '3',
+		'favorites' => '3, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '3',
-		'qin inter' => '3',
-		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'qin inter' => '3, 9',
+		'win pivots' => '3, 9',
+		'qin pivots' => '3, 9',
+		'trio pivots' => '3, 9',
 	],
 	'8' => [
 		/**
