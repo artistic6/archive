@@ -87,13 +87,14 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '3, 9',
+		'favorites' => '2, 3, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '3',//count: 1
-		'qin inter' => '3, 9',
-		'win pivots' => '3, 9',
-		'qin pivots' => '3, 9',
-		'trio pivots' => '3, 9',
+		'win inter' => '2',//count: 1
+		'qin inter' => '2, 3, 9',
+		'win pivots' => '2, 3, 9',
+		'qin pivots' => '2, 3, 9',
+		'trio pivots' => '2, 3, 9',
+		'win($100)' => '2, 3, 9',
 	],
 	'8' => [
 		/**
@@ -155,7 +156,7 @@ return [
 		'trio pivots' => '11',
 	],
 ];
-//total win: -860
+//total win: -1160
 //total place: -2350
 //total qin: -120
 //total trio: -20
