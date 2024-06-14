@@ -137,22 +137,17 @@ return [
 		/**
 		Race 11
 		*/
-		'favorites' => '6, 11, 13',
+		'favorites' => '1, 6, 11, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'win inter' => '',//count: 0
 		'qin inter' => '',
 		'win pivots' => '',
 		'qin pivots' => '11',
-		'trio pivots' => '6, 11',
-		'win($100)' => '6, 11, 13',
-		'place($50)' => '7',
-		'place($50)' => '10',
-		'place($50)' => '13',
-		'sure wp' => '13',
+		'trio pivots' => '1, 6, 11',
 	],
 ];
-//total win: -1060
-//total place: -1350
+//total win: -760
+//total place: -1200
 //total qin: -60
 //total trio: -10
 //total: 0
