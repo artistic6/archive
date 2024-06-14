@@ -89,13 +89,13 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '1',
+		'favorites' => '1, 4',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win inter' => '1',
-		'qin inter' => '1',
-		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'win inter' => '4',
+		'qin inter' => '1, 4',
+		'win pivots' => '4',
+		'qin pivots' => '1, 4',
+		'trio pivots' => '1, 4',
 	],
 	'9' => [
 		/**
@@ -113,25 +113,25 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '7',
+		'favorites' => '2, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'win inter' => '7',
-		'qin inter' => '7',
-		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'qin inter' => '2, 7',
+		'win pivots' => '2, 7',
+		'qin pivots' => '2, 7',
+		'trio pivots' => '2, 7',
 	],
 	'11' => [
 		/**
 		Race 11
 		*/
-		'favorites' => '11',
+		'favorites' => '11, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'win inter' => '',
 		'qin inter' => '',
 		'win pivots' => '',
-		'qin pivots' => '',
-		'trio pivots' => '',
+		'qin pivots' => '11',
+		'trio pivots' => '11',
 	],
 ];
 //total win: 0
