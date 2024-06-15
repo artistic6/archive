@@ -24,15 +24,6 @@ return [
 		'win pivots' => '5, 6',
 		'qin pivots' => '5, 6',
 		'trio pivots' => '3, 5, 6',
-		'win($100)' => '3, 5, 6',
-		'qin($20)' => '3, 5, 6',
-		'trio($10)' => '3, 5, 6',
-		'win($100)' => '6',
-		'place($500)' => '3',
-		'place($500)' => '6',
-		'place($50)' => '1',
-		'place($50)' => '2',
-		'place($50)' => '4',
 	],
 	'3' => [
 		/**
@@ -45,7 +36,6 @@ return [
 		'win pivots' => '2, 3, 4, 12',
 		'qin pivots' => '2, 3, 4, 12',
 		'trio pivots' => '2, 3, 4, 12',
-		'place($50)' => '1',
 	],
 	'4' => [
 		/**
@@ -146,8 +136,8 @@ return [
 		'trio pivots' => '1, 6, 11',
 	],
 ];
-//total win: -1000
-//total place: -1200
-//total qin: -60
-//total trio: -10
+//total win: -600
+//total place: 0
+//total qin: 0
+//total trio: 0
 //total: 0
