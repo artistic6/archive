@@ -29,13 +29,13 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '2, 3, 4, 12',
+		'favorites' => '2, 3, 4, 11, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '2',//count: 1
-		'qin inter' => '2, 12',
-		'win pivots' => '2, 3, 4, 12',
-		'qin pivots' => '2, 3, 4, 12',
-		'trio pivots' => '2, 3, 4, 12',
+		'win inter' => '',//count: 0
+		'qin inter' => '12',
+		'win pivots' => '2, 3, 4, 11, 12',
+		'qin pivots' => '2, 3, 4, 11, 12',
+		'trio pivots' => '2, 3, 4, 11, 12',
 	],
 	'4' => [
 		/**
