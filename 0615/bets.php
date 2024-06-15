@@ -113,13 +113,13 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '1, 6',
+		'favorites' => '1, 3, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 9, 10, 11',
 		'win inter' => '1',//count: 1
-		'qin inter' => '1',
-		'win pivots' => '1',
-		'qin pivots' => '1, 6',
-		'trio pivots' => '1, 6',
+		'qin inter' => '1, 3',
+		'win pivots' => '1, 3, 6',
+		'qin pivots' => '1, 3, 6',
+		'trio pivots' => '1, 3, 6',
 	],
 	'10' => [
 		/**
