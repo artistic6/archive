@@ -25,9 +25,9 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '7',
+		'favorites' => '3, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '7',
+		'win inter' => '3, 7',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
 	],
@@ -75,9 +75,9 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '5',
+		'favorites' => '3, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7',
-		'win inter' => '5',
+		'win inter' => '3',
 		'count sets' => 7,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 	],
@@ -85,9 +85,9 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '11',
+		'favorites' => '2, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'win inter' => '',
+		'win inter' => '2',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
@@ -95,7 +95,7 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '5',
+		'favorites' => '3, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'win inter' => '',
 		'count sets' => 0,
