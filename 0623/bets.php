@@ -50,7 +50,6 @@ return [
 		'win inter' => '',
 		'count sets' => 2,
 		'allValues' => '1, 3, 4, 5, 10, 11',
-		'win($10)' => '4, 14',
 	],
 	'6' => [
 		/**
@@ -113,7 +112,7 @@ return [
 		'allValues' => '',
 	],
 ];
-//total win: -20
+//total win: 0
 //total place: 0
 //total qin: 0
 //total trio: 0
