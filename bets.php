@@ -106,7 +106,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($winInter);
     $winInter = array_intersect($favorites, $winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
-    $unitBet = 100;
+    $unitBet = 10;
     $allValues = [];
     $winSets = [];
     foreach($runners  as $one){
