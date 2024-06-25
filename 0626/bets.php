@@ -30,6 +30,7 @@ return [
 		'win inter' => '1',
 		'count sets' => 4,
 		'allValues' => '1, 2, 3, 5, 6, 7',
+		'win($100)' => '1, 2, 3, 5, 6, 7',
 	],
 	'4' => [
 		/**
@@ -50,6 +51,7 @@ return [
 		'win inter' => '1',
 		'count sets' => 2,
 		'allValues' => '1, 3, 4, 5, 10, 11',
+		'win($100)' => '1, 3, 4, 5, 10, 11',
 	],
 	'6' => [
 		/**
@@ -70,6 +72,7 @@ return [
 		'win inter' => '3',
 		'count sets' => 6,
 		'allValues' => '1, 3, 4, 5, 6, 7',
+		'win($100)' => '1, 3, 4, 5, 6, 7',
 	],
 	'8' => [
 		/**
@@ -92,7 +95,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 	],
 ];
-//total win: 0
+//total win: -1800
 //total place: 0
 //total qin: 0
 //total trio: 0
