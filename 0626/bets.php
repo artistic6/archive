@@ -39,8 +39,8 @@ return [
 		'favorites' => '2, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '12',
-		'count sets' => 11,
-		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11, 12',
+		'count sets' => 15,
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 	],
 	'5' => [
 		/**
@@ -60,7 +60,7 @@ return [
 		'favorites' => '5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '5',
-		'count sets' => 7,
+		'count sets' => 10,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
 	],
 	'7' => [
@@ -70,9 +70,8 @@ return [
 		'favorites' => '3',
 		'runners' => '1, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win inter' => '3',
-		'count sets' => 6,
-		'allValues' => '1, 3, 4, 5, 6, 7',
-		'win($10)' => '1, 3, 4, 5, 6, 7',
+		'count sets' => 12,
+		'allValues' => '1, 3, 4, 5, 6, 7, 8, 9',
 	],
 	'8' => [
 		/**
@@ -81,21 +80,21 @@ return [
 		'favorites' => '2, 3, 5, 9, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '',
-		'count sets' => 12,
+		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'favorites' => '2, 9, 10',
+		'favorites' => '1, 2, 9, 10',
 		'runners' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '',
 		'count sets' => 11,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10, 11',
 	],
 ];
-//total win: -180
+//total win: -120
 //total place: 0
 //total qin: 0
 //total trio: 0
