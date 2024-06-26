@@ -137,6 +137,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
     if(count($allValues) <= 7){
+        $allValues = array_slice($allValues, 0, 6);
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $allValues) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($allValues);
         $totalWin -= 1 * $unitBet * count($allValues);
