@@ -3,6 +3,8 @@
 $revision = 2;
 
 include "condition$revision.php";
+$step = "bets$revision";
+$history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
 
 function factorial($n){
     if($n <= 0) return 1;
@@ -22,7 +24,6 @@ $totalWin = 0;
 $totalPlace = 0;
 $totalQin = 0;
 $totalTrio = 0;
-$step = "bets$revision";
 $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
@@ -30,7 +31,6 @@ $oddsFile = $currentDir . DIRECTORY_SEPARATOR . "odds.php";
 $winOddsFile = $currentDir . DIRECTORY_SEPARATOR . "winodds.php";
 if(file_exists($winOddsFile)) $allWinOdds = include($winOddsFile);
 if(file_exists($oddsFile)) $allRacesOdds = include($oddsFile);
-$history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "$step.php";
 
 if(file_exists($outFile)){
@@ -108,7 +108,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($winInter);
     $winInter = array_intersect($favorites, $winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
-    $unitBet = 10;
+    $unitBet = 20;
     $allValues = [];
     $winSets = [];
     foreach($runners  as $one){
@@ -138,7 +138,15 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'count sets' => " . count($winSets) . ",\n"; 
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
+    if(in_array($raceNumber, [3, 4, 5, 6, 8])) {
+        $racetext .= "\t],\n";
+        unset($oldFavorites);
+        unset($favorites);
+        $outtext .= $racetext;
+        continue;
+    }
     if(count($allValues) <= 7){
+        $allValues = array_slice($allValues, 0, 6);
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $allValues) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($allValues);
         $totalWin -= 1 * $unitBet * count($allValues);
@@ -203,7 +211,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
                 $totalPlace += (2 * $unitBet / 10) * $placeAmount[end($wp)];
             }
         }
-        $racetext .= "\t\t'total won in race' => " . $totalRace[$raceNumber] . ",\n";
+        $racetext .= "\t\t'total won in race $raceNumber' => " . $totalRace[$raceNumber] . ",\n";
         $total += $totalRace[$raceNumber];
     }
     $racetext .= "\t],\n";
