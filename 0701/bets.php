@@ -100,7 +100,6 @@ return [
 		'win inter' => '4',
 		'count sets' => 0,
 		'allValues' => '',
-		'win($30)' => '',
 	],
 	'11' => [
 		/**
@@ -111,7 +110,6 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
-		'win($30)' => '',
 	],
 ];
 //total wp: 0

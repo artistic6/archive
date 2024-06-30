@@ -70,7 +70,7 @@ return [
 		'win inter' => '',
 		'count sets' => 16,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
-		'win($30)' => '1, 2, 3, 4, 5, 6',
+		'win(allValues, $30)' => '1, 2, 3, 4, 5, 6',
 	],
 	'8' => [
 		/**
@@ -101,7 +101,6 @@ return [
 		'win inter' => '4',
 		'count sets' => 0,
 		'allValues' => '',
-		'win($30)' => '',
 	],
 	'11' => [
 		/**
@@ -112,7 +111,6 @@ return [
 		'win inter' => '',
 		'count sets' => 0,
 		'allValues' => '',
-		'win($30)' => '',
 	],
 ];
 //total wp: 0

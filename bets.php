@@ -141,9 +141,9 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
         
-    if(!in_array($raceNumber, [3, 4, 5, 6, 8]) && count($allValues) <= 7){
+    if(!empty($allValues) && !in_array($raceNumber, [3, 4, 5, 6, 8]) && count($allValues) <= 7){
         $allValues = array_slice($allValues, 0, 6);
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $allValues) . "',\n"; 
+        $racetext .= "\t\t'win(allValues, $" . $unitBet . ")' => '" . implode(", ", $allValues) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($allValues);
         $totalWin -= 1 * $unitBet * count($allValues);
     }
@@ -153,7 +153,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalPlace -= 2 * $unitBet;
     }
     if(in_array(count($winSets), $favoriteWin)){
-        $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
+        $racetext .= "\t\t'win(favorites, $" . $unitBet . ")' => '" . implode(", ", $favorites) . "',\n"; 
         $totalBets[$raceNumber] += 1 * $unitBet * count($favorites);
         $totalWin -= 1 * $unitBet * count($favorites);
     }
@@ -161,7 +161,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $wp = array_intersect($allValues, $favorites);
         if(count($wp) === 2) $wp = range(1, $favorites[1]);
         if(count($wp) < 9){
-            $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $wp) . "',\n"; 
+            $racetext .= "\t\t'win(wp, " . $unitBet . ")' => '" . implode(", ", $wp) . "',\n"; 
             $totalBets[$raceNumber] += 1 * $unitBet * count($wp);
             $totalWin -= 1 * $unitBet * count($wp);
         }
