@@ -60,10 +60,10 @@ return [
 		'win inter' => '1',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9',
-		'win(favorites, $30)' => '1, 4, 7, 8',
-		'win(wp, 30)' => '1, 7, 8',
-		'win(end-wp, $30)' => '8',
-		'place(end-wp, $60)' => '8',
+		'win(favorites, $10)' => '1, 4, 7, 8',
+		'win(wp, 10)' => '1, 7, 8',
+		'win(end-wp, $10)' => '8',
+		'place(end-wp, $20)' => '8',
 	],
 	'7' => [
 		/**
@@ -117,8 +117,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -240
-//total place: -60
+//total win: -80
+//total place: -20
 //total qin: 0
 //total trio: 0
 //total: 0
