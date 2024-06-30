@@ -15,9 +15,9 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '9, 10',
+		'favorites' => '9, 10, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '10',
+		'win inter' => '',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 	],
@@ -96,7 +96,7 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '4',
+		'favorites' => '4, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'win inter' => '4',
 		'count sets' => 0,
