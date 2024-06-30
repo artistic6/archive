@@ -148,7 +148,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $totalWin -= 1 * $unitBet * count($allValues);
     }
     if(count($favorites) >= 3 && count($winInter) >= 3){
-        $racetext .= "\t\t'place($" . 2 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
+        $racetext .= "\t\t'place(end-favorites, $" . 2 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += 2 * $unitBet;
         $totalPlace -= 2 * $unitBet;
     }
@@ -166,7 +166,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalWin -= 1 * $unitBet * count($wp);
         }
         if(count($wp) === 3){
-            $racetext .= "\t\t'place($" . 2 * $unitBet . ")' => '" . end($wp) . "',\n"; 
+            $racetext .= "\t\t'place(end-wp, $" . 2 * $unitBet . ")' => '" . end($wp) . "',\n"; 
             $totalBets[$raceNumber] += 2 * $unitBet;
             $totalPlace -= 2 * $unitBet;
         }
