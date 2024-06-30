@@ -62,6 +62,7 @@ return [
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9',
 		'win(favorites, $30)' => '1, 4, 7, 8',
 		'win(wp, 30)' => '1, 7, 8',
+		'win(end-wp, $30)' => '8',
 		'place(end-wp, $60)' => '8',
 	],
 	'7' => [
@@ -116,7 +117,7 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -210
+//total win: -240
 //total place: -60
 //total qin: 0
 //total trio: 0
