@@ -140,15 +140,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'count sets' => " . count($winSets) . ",\n"; 
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    //sort allValues by place odds
-    $pOdds = [];
-    foreach($allValues as $value) {
-        $pOdds[$value] = $allRacesOdds[$raceNumber][$value];
-    }
-    asort($pOdds);
-    $sortedValues = array_keys($pOdds);
-    $racetext .= "\t\t'allValues sorted by place odds' => '" . implode(", ", $sortedValues) . "',\n";
-    
+        
     if(!in_array($raceNumber, [3, 4, 5, 6, 8]) && count($allValues) <= 7){
         $allValues = array_slice($allValues, 0, 6);
         $racetext .= "\t\t'win($" . $unitBet . ")' => '" . implode(", ", $allValues) . "',\n"; 
