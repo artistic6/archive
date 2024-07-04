@@ -65,6 +65,7 @@ return [
 		'win inter' => '2',
 		'count sets' => 7,
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9, 10',
+		'place(count 2, $30)' => '2, 3, 12',
 	],
 	'7' => [
 		/**
@@ -104,7 +105,7 @@ return [
 ];
 //total wp: 0
 //total win: -540
-//total place: -660
+//total place: -750
 //total qin: 0
 //total trio: 0
 //total: 0
