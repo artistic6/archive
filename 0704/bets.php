@@ -48,13 +48,12 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '3, 8',
+		'favorites' => '3, 4, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '8',
 		'count sets' => 5,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
-		'win(count 2, $30)' => '3, 8',
-		'place(count 2, $30)' => '3, 8',
+		'place(count 2, $30)' => '3, 4, 8',
 	],
 	'6' => [
 		/**
@@ -103,8 +102,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -360
-//total place: -570
+//total win: -300
+//total place: -600
 //total qin: 0
 //total trio: 0
 //total: 0
