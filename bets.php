@@ -1,5 +1,6 @@
 <?php
 
+if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 $raceDate = trim($argv[1]);
 
 if(isset($argv[2])) $revision = trim($argv[2]);
@@ -19,8 +20,6 @@ function combination($p, $n){
     if($n < $p) return 0;
     return factorial($n) / (factorial($p) * factorial($n - $p));
 }
-
-if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 
 $total = 0;
 $totalWin = 0;
