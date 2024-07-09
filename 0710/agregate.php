@@ -12,6 +12,7 @@ return [
 		'win(allValues 1569, $30)' => '1, 3, 5, 7, 8, 9',
 		'win(allValues 1570, $30)' => '1, 4, 5, 6, 7, 8',
 		'win(allValues 174, $30)' => '1, 2, 3, 5, 7, 8',
+		'win(allValues, intersection)' => '5, 7',
 	],
 	'2' => [
 		/**
@@ -19,6 +20,7 @@ return [
 		*/
 		'win(allValues 1097, $30)' => '1, 2, 3, 4, 5, 6',
 		'win(allValues 1586, $30)' => '2, 3, 4, 5, 6, 8',
+		'win(allValues, intersection)' => '2, 3, 4, 5, 6',
 	],
 	'7' => [
 		/**
@@ -37,6 +39,7 @@ return [
 		'win(allValues 1264, $30)' => '1, 2, 3, 4, 5',
 		'win(allValues 1492, $30)' => '1, 3, 4, 5, 6, 7',
 		'win(allValues 308, $30)' => '1, 3, 4, 5',
+		'win(allValues, intersection)' => '',
 	],
 	'8' => [
 		/**
@@ -52,5 +55,6 @@ return [
 		'win(allValues 1099, $30)' => '1, 3, 4, 5, 6, 7',
 		'win(allValues 1399, $30)' => '2, 3, 4, 8, 9, 10',
 		'win(wp 1399, 30)' => '2, 3, 8',
+		'win(allValues, intersection)' => '3, 4',
 	],
 ];

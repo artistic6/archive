@@ -19,11 +19,27 @@ foreach ($dir as $fileinfo) {
         foreach($fileContents as $raceNumber => $data){
             if(isset($data['bets'])) {
                 foreach($data['bets'] as $key => $value){
-                    if(!in_array($value, $bets[$raceNumber])) $bets[$raceNumber][$key] = $value;
+                    if(!in_array($value, $bets[$raceNumber])) {
+                        $bets[$raceNumber][$key] = $value;
+                    }
                 }
             }
         }
     }
+}
+foreach($bets as $raceNumber => $data){
+    $firstSet = true;
+    foreach($data as $key => $value){
+        if(strpos($key, "win(allValues") === 0){
+            if($firstSet){
+                $interWinValues = explode(", ", $value);
+                $firstSet = false;
+            }
+            else $interWinValues = array_intersect($interWinValues, explode(", ", $value));
+        }
+    }
+    if(isset($interWinValues)) $bets[$raceNumber]['win(allValues, intersection)'] = implode(", ", $interWinValues);
+    unset($interWinValues);
 }
 foreach($bets as $raceNumber => $data){
     if(!empty($data)){
