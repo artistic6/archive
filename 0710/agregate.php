@@ -108,10 +108,8 @@ return [
 		/**
 		Race 9
 		*/
-		'place(end-favorites , $60)' => '8',
 		'win(allValues 1099, $30)' => '1, 3, 4, 5, 6, 7',
 		'win(allValues 1399, $30)' => '2, 3, 4, 8, 9, 10',
-		'win(wp 1399, 30)' => '2, 3, 8',
 		'win(allValues, union)' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win(allValues, intersection)' => '3, 4',
 	],

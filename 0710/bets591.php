@@ -124,12 +124,12 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '1, 2, 3, 5, 8',
+		'favorites' => '1, 2, 3, 5, 8, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '5, 8',
+		'win inter' => '5',
 		'count sets' => 11,
 		'allValues' => '1, 3, 4, 5, 6, 7, 8',
-		'diff' => '1, 3, 4, 6, 7',
+		'diff' => '1, 3, 4, 6, 7, 8',
 		'bets' => [
 			'win(allValues 591, $30)' => '1, 3, 4, 5, 6, 7',
 		],

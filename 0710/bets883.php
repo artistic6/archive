@@ -126,21 +126,20 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '1, 2, 3, 5, 8',
+		'favorites' => '1, 2, 3, 5, 8, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '3, 5, 8',
+		'win inter' => '3, 5',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'diff' => '1, 2, 4, 6, 7, 9, 10, 11',
+		'diff' => '1, 2, 4, 6, 7, 8, 9, 10, 11',
 		'bets' => [
-			'place(end-favorites 883, $60)' => '8',
 		],
-		'total bets' => 60,
+		'total bets' => 0,
 	],
 ];
 //total wp: 0
 //total win: -1110
-//total place: -180
+//total place: -120
 //total qin: 0
 //total trio: 0
 //total: 0
