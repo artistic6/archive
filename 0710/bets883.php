@@ -26,7 +26,7 @@ return [
 		'allValues' => '2, 3, 4, 5, 6, 8, 9',
 		'diff' => '2, 3, 4, 5, 8, 9',
 		'bets' => [
-			'win(allValues 0710, $30)' => '2, 3, 4, 5, 6, 8',
+			'win(allValues 883, $30)' => '2, 3, 4, 5, 6, 8',
 		],
 		'total bets' => 180,
 	],
@@ -97,8 +97,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff' => '1, 4, 5, 6, 7, 8, 9',
 		'bets' => [
-			'place(end-favorites 0710, $60)' => '10',
-			'win(wp 0710, 30)' => '1, 2, 3, 4',
+			'place(end-favorites 883, $60)' => '10',
+			'win(wp 883, 30)' => '1, 2, 3, 4',
 		],
 		'total bets' => 180,
 	],
@@ -113,7 +113,7 @@ return [
 		'allValues' => '1, 3, 4, 5, 7, 8',
 		'diff' => '5, 7',
 		'bets' => [
-			'win(wp 0710, 30)' => '1, 2, 3, 4, 5, 6, 7, 8',
+			'win(wp 883, 30)' => '1, 2, 3, 4, 5, 6, 7, 8',
 		],
 		'total bets' => 240,
 	],
@@ -128,7 +128,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'diff' => '1, 2, 4, 6, 7, 9, 10, 11',
 		'bets' => [
-			'place(end-favorites 0710, $60)' => '8',
+			'place(end-favorites 883, $60)' => '8',
 		],
 		'total bets' => 60,
 	],

@@ -96,7 +96,7 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'diff' => '1, 4, 5, 6, 7, 8, 9',
 		'bets' => [
-			'place(end-favorites 0710, $60)' => '10',
+			'place(end-favorites 1446, $60)' => '10',
 		],
 		'total bets' => 60,
 	],

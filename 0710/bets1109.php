@@ -96,8 +96,8 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'diff' => '1, 4, 5, 6, 7',
 		'bets' => [
-			'win(allValues 0710, $30)' => '1, 2, 3, 4, 5, 6',
-			'place(end-favorites 0710, $60)' => '10',
+			'win(allValues 1109, $30)' => '1, 2, 3, 4, 5, 6',
+			'place(end-favorites 1109, $60)' => '10',
 		],
 		'total bets' => 240,
 	],
@@ -112,7 +112,7 @@ return [
 		'allValues' => '1, 3, 4, 5, 7, 8',
 		'diff' => '5, 7',
 		'bets' => [
-			'win(wp 0710, 30)' => '1, 2, 3, 4, 5, 6, 7, 8',
+			'win(wp 1109, 30)' => '1, 2, 3, 4, 5, 6, 7, 8',
 		],
 		'total bets' => 240,
 	],
