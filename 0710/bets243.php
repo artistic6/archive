@@ -78,7 +78,7 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '2, 5, 6',
+		'favorites' => '2, 3, 5, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win inter' => '1, 2, 5, 6',
 		'count sets' => 10,
@@ -86,10 +86,8 @@ return [
 		'diff' => '3, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites 243, $60)' => '6',
-			'win(wp 243, 30)' => '2, 5, 6',
-			'place(end-wp 243, $60)' => '6',
 		],
-		'total bets' => 210,
+		'total bets' => 60,
 	],
 	'7' => [
 		/**
@@ -139,8 +137,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -900
-//total place: -240
+//total win: -810
+//total place: -180
 //total qin: 0
 //total trio: 0
 //total: 0
