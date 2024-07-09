@@ -105,12 +105,12 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '7',
+		'favorites' => '7, 8',
 		'runners' => '1, 3, 4, 5, 7, 8, 9, 10, 11',
-		'win inter' => '3, 4, 5, 8, 11',
+		'win inter' => '4, 8, 11',
 		'count sets' => 2,
 		'allValues' => '1, 3, 4, 5, 7',
-		'diff' => '1, 7',
+		'diff' => '1, 3, 5, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -119,12 +119,12 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '2, 3, 8',
+		'favorites' => '1, 2, 3, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '2, 3, 5, 8',
+		'win inter' => '3, 5, 8',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'diff' => '1, 4, 6, 7, 9, 10, 11',
+		'diff' => '1, 2, 4, 6, 7, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites, $60)' => '8',
 		],
