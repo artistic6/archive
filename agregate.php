@@ -17,7 +17,11 @@ foreach ($dir as $fileinfo) {
         $fullFilePath = $currentDir . DIRECTORY_SEPARATOR . $fileinfo->getFilename();
         $fileContents = include($fullFilePath);
         foreach($fileContents as $raceNumber => $data){
-            if(isset($data['bets'])) $bets[$raceNumber] = array_merge($bets[$raceNumber], $data['bets']);
+            if(isset($data['bets'])) {
+                foreach($data['bets'] as $key => $value){
+                    if(!in_array($value, $bets[$raceNumber])) $bets[$raceNumber][$key] = $value;
+                }
+            }
         }
     }
 }
