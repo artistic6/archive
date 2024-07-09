@@ -25,7 +25,9 @@ return [
 		/**
 		Race 9
 		*/
-		'win(wp, 30)' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'place(end-favorites, $60)' => '8',
+		'win(wp, 30)' => '2, 3, 8',
+		'place(end-wp, $60)' => '8',
 		'win(allValues, $30)' => '2, 3, 4, 8, 9, 10',
 	],
 ];

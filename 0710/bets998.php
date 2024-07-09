@@ -5,12 +5,12 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '10',
+		'favorites' => '1, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '1, 3, 4, 6, 7, 8, 10, 12',
+		'win inter' => '1, 3, 4, 7, 8, 10',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'diff' => '2, 5, 9',
+		'diff' => '2, 5, 6, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -119,7 +119,7 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '2, 8',
+		'favorites' => '2, 3, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '2, 3, 5',
 		'count sets' => 12,
