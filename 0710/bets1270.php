@@ -77,12 +77,12 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '5, 6',
+		'favorites' => '2, 5, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win inter' => '1, 2, 6',
+		'win inter' => '2, 6',
 		'count sets' => 7,
 		'allValues' => '1, 2, 4, 6, 8, 9, 10',
-		'diff' => '4, 8, 9, 10',
+		'diff' => '1, 4, 8, 9, 10',
 		'bets' => [
 			'win(allValues 1270, $30)' => '1, 2, 4, 6, 8, 9',
 		],

@@ -61,12 +61,14 @@ return [
 		/**
 		Race 6
 		*/
+		'place(end-favorites , $60)' => '6',
 		'win(allValues 1003, $30)' => '1, 3, 6, 7, 8, 9',
-		'win(wp 1006, 30)' => '1, 2, 3, 4, 5, 6',
+		'win(wp 1006, 30)' => '2, 5, 6',
 		'win(allValues 1016, $30)' => '1, 2, 4, 6, 8, 9',
 		'win(allValues 1023, $30)' => '2, 3, 5, 6',
 		'win(allValues 1026, $30)' => '1, 2, 3, 5, 6, 8',
 		'win(allValues 1093, $30)' => '1, 2, 3, 5, 6, 7',
+		'win(wp 1253, 30)' => '1, 2, 3, 4, 5',
 		'win(allValues, union)' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'win(allValues, intersection)' => '6',
 	],
