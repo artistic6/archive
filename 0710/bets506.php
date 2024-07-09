@@ -19,12 +19,12 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '7',
+		'favorites' => '7, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '2, 7, 8',
+		'win inter' => '7',
 		'count sets' => 2,
 		'allValues' => '2, 3, 4, 5, 6, 8, 9',
-		'diff' => '3, 4, 5, 6, 9',
+		'diff' => '2, 3, 4, 5, 6, 8, 9',
 		'bets' => [
 			'win(allValues, $30)' => '2, 3, 4, 5, 6, 8',
 		],
@@ -34,9 +34,9 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '11',
+		'favorites' => '6, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '1, 3, 5, 9, 11',
+		'win inter' => '1, 3, 5',
 		'count sets' => 1,
 		'allValues' => '2, 3, 5, 6',
 		'diff' => '2, 6',
@@ -62,9 +62,9 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '9',
+		'favorites' => '5, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '2, 3, 5, 8',
+		'win inter' => '2, 3, 5',
 		'count sets' => 6,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
 		'diff' => '1, 4, 10, 11',
@@ -90,15 +90,16 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '10',
+		'favorites' => '3, 4, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '2, 3, 5, 8, 10, 12',
+		'win inter' => '2, 3, 10',
 		'count sets' => 22,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'diff' => '1, 4, 6, 7, 9',
+		'diff' => '1, 4, 5, 6, 7, 8, 9',
 		'bets' => [
+			'place(end-favorites, $60)' => '10',
 		],
-		'total bets' => 0,
+		'total bets' => 60,
 	],
 	'8' => [
 		/**
@@ -118,20 +119,21 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '8',
+		'favorites' => '2, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '1, 2, 3, 5, 8',
+		'win inter' => '2, 3, 5, 8',
 		'count sets' => 13,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'diff' => '4, 6, 7, 9, 10, 11',
+		'diff' => '1, 4, 6, 7, 9, 10, 11',
 		'bets' => [
+			'win(wp, 30)' => '1, 2, 3, 4, 5, 6, 7, 8',
 		],
-		'total bets' => 0,
+		'total bets' => 240,
 	],
 ];
 //total wp: 0
-//total win: -180
-//total place: 0
+//total win: -420
+//total place: -60
 //total qin: 0
 //total trio: 0
 //total: 0
