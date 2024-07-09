@@ -112,16 +112,4 @@ return [
 		'win(allValues, union)' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win(allValues, intersection)' => '3, 4',
 	],
-	'10' => [
-		/**
-		Race 10
-		*/
-		'win(allValues, union)' => '',
-	],
-	'11' => [
-		/**
-		Race 11
-		*/
-		'win(allValues, union)' => '',
-	],
 ];

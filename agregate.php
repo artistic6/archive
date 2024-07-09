@@ -41,7 +41,7 @@ foreach($bets as $raceNumber => $data){
         }
     }
     sort($unionWinValues);
-    if(isset($unionWinValues)) $bets[$raceNumber]['win(allValues, union)'] = implode(", ", $unionWinValues);
+    if(!empty($unionWinValues)) $bets[$raceNumber]['win(allValues, union)'] = implode(", ", $unionWinValues);
     if(isset($interWinValues)) $bets[$raceNumber]['win(allValues, intersection)'] = implode(", ", $interWinValues);
     unset($unionWinValues);
     unset($interWinValues);
