@@ -48,12 +48,12 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '12',
+		'favorites' => '4, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '1, 3, 6, 11, 12',
+		'win inter' => '1, 3, 11, 12',
 		'count sets' => 15,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
-		'diff' => '2, 4, 5, 7, 8, 10',
+		'diff' => '2, 4, 5, 6, 7, 8, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -77,12 +77,12 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '6',
+		'favorites' => '5, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win inter' => '1, 2, 4, 6, 7, 8, 9',
+		'win inter' => '1, 2, 6',
 		'count sets' => 21,
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
-		'diff' => '3, 10',
+		'diff' => '3, 4, 7, 8, 9, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -108,7 +108,7 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '7, 8, 10',
+		'favorites' => '1, 7, 8, 10',
 		'runners' => '1, 3, 4, 5, 7, 8, 9, 10, 11',
 		'win inter' => '3',
 		'count sets' => 8,
@@ -116,9 +116,10 @@ return [
 		'diff' => '1, 4, 5, 7, 8',
 		'bets' => [
 			'win(allValues 555, $30)' => '1, 3, 4, 5, 7, 8',
-			'win(wp 555, 30)' => '1, 2, 3, 4, 5, 6, 7, 8',
+			'win(wp 555, 30)' => '1, 7, 8',
+			'place(end-wp 555, $60)' => '8',
 		],
-		'total bets' => 420,
+		'total bets' => 330,
 	],
 	'9' => [
 		/**
@@ -137,8 +138,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -1050
-//total place: -120
+//total win: -900
+//total place: -180
 //total qin: 0
 //total trio: 0
 //total: 0
