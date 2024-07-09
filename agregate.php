@@ -29,6 +29,7 @@ foreach ($dir as $fileinfo) {
 }
 foreach($bets as $raceNumber => $data){
     $firstSet = true;
+    $unionWinValues = [];
     foreach($data as $key => $value){
         if(strpos($key, "win(allValues") === 0){
             if($firstSet){
@@ -36,9 +37,13 @@ foreach($bets as $raceNumber => $data){
                 $firstSet = false;
             }
             else $interWinValues = array_intersect($interWinValues, explode(", ", $value));
+            $unionWinValues = array_values(array_unique(array_merge($unionWinValues, explode(", ", $value))));
         }
     }
+    sort($unionWinValues);
+    if(isset($unionWinValues)) $bets[$raceNumber]['win(allValues, union)'] = implode(", ", $unionWinValues);
     if(isset($interWinValues)) $bets[$raceNumber]['win(allValues, intersection)'] = implode(", ", $interWinValues);
+    unset($unionWinValues);
     unset($interWinValues);
 }
 foreach($bets as $raceNumber => $data){
