@@ -61,16 +61,17 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '5, 9',
+		'favorites' => '2, 5, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '3, 5',
+		'win inter' => '',
 		'count sets' => 3,
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
-		'diff' => '1, 2, 4, 10, 11',
+		'diff' => '1, 2, 3, 4, 5, 10, 11',
 		'bets' => [
 			'win(allValues 1532, $30)' => '1, 2, 3, 4, 5, 10',
+			'win(wp 1532, 30)' => '1, 2, 3, 4, 5',
 		],
-		'total bets' => 180,
+		'total bets' => 330,
 	],
 	'6' => [
 		/**
@@ -83,10 +84,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff' => '3, 4, 7, 8, 9, 10',
 		'bets' => [
-			'win(count 1532, $30)' => '1, 2, 3, 4, 5, 6, 9',
 			'place(end-favorites 1532, $60)' => '6',
 		],
-		'total bets' => 270,
+		'total bets' => 60,
 	],
 	'7' => [
 		/**
@@ -133,7 +133,7 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -570
+//total win: -510
 //total place: -60
 //total qin: 0
 //total trio: 0

@@ -64,7 +64,6 @@ return [
 		/**
 		Race 6
 		*/
-		'win(count , $30)' => '1, 2, 3, 4, 5, 6, 9',
 		'place(end-favorites , $60)' => '6',
 		'win(allValues 1003, $30)' => '1, 3, 6, 7, 8, 9',
 		'win(wp 1003, 30)' => '1, 2, 3',
