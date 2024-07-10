@@ -12,8 +12,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff' => '2, 5, 9',
 		'bets' => [
+			'win(allValues 114, $30)' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		],
-		'total bets' => 0,
+		'total bets' => 300,
 	],
 	'2' => [
 		/**
@@ -26,8 +27,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'diff' => '1, 2, 3, 4, 5, 8, 9, 10, 11',
 		'bets' => [
+			'win(allValues 114, $30)' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		],
-		'total bets' => 0,
+		'total bets' => 330,
 	],
 	'3' => [
 		/**
@@ -55,10 +57,11 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'diff' => '2, 3, 4, 5, 6, 7, 8, 10, 12',
 		'bets' => [
+			'win(allValues 114, $30)' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12',
 			'win(wp 114, 30)' => '4, 8, 12',
 			'place(end-wp 114, $60)' => '12',
 		],
-		'total bets' => 150,
+		'total bets' => 480,
 	],
 	'5' => [
 		/**
@@ -71,10 +74,10 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
 		'diff' => '1, 3, 4, 5, 10, 11',
 		'bets' => [
-			'win(allValues 114, $30)' => '1, 2, 3, 4, 5, 10',
+			'win(allValues 114, $30)' => '1, 2, 3, 4, 5, 10, 11',
 			'win(wp 114, 30)' => '1, 2, 3, 4, 5',
 		],
-		'total bets' => 330,
+		'total bets' => 360,
 	],
 	'6' => [
 		/**
@@ -87,9 +90,10 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff' => '3, 4, 7, 8, 9, 10',
 		'bets' => [
+			'win(allValues 114, $30)' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 			'place(end-favorites 114, $60)' => '6',
 		],
-		'total bets' => 60,
+		'total bets' => 360,
 	],
 	'7' => [
 		/**
@@ -102,9 +106,10 @@ return [
 		'allValues' => '1, 2, 3, 5, 6, 7, 8, 9',
 		'diff' => '1, 5, 6, 7, 8, 9',
 		'bets' => [
+			'win(allValues 114, $30)' => '1, 2, 3, 5, 6, 7, 8, 9',
 			'place(end-favorites 114, $60)' => '10',
 		],
-		'total bets' => 60,
+		'total bets' => 300,
 	],
 	'8' => [
 		/**
@@ -132,12 +137,13 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'diff' => '1, 2, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
+			'win(allValues 114, $30)' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		],
-		'total bets' => 0,
+		'total bets' => 330,
 	],
 ];
 //total wp: 0
-//total win: -780
+//total win: -2640
 //total place: -180
 //total qin: 0
 //total trio: 0
