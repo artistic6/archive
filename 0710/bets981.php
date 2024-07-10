@@ -68,9 +68,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5',
 		'diff' => '1, 3, 4, 5',
 		'bets' => [
-			'win(wp 981, 30)' => '1, 2, 3, 4, 5',
+			'win(wp 981, 30)' => '2, 5',
 		],
-		'total bets' => 150,
+		'total bets' => 60,
 	],
 	'6' => [
 		/**
@@ -83,9 +83,10 @@ return [
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
 		'diff' => '2, 3, 4, 7, 8, 9, 10',
 		'bets' => [
+			'win(count 981, $30)' => '1, 2, 3, 4, 5, 6, 8',
 			'place(end-favorites 981, $60)' => '6',
 		],
-		'total bets' => 60,
+		'total bets' => 270,
 	],
 	'7' => [
 		/**
@@ -132,7 +133,7 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -150
+//total win: -270
 //total place: -120
 //total qin: 0
 //total trio: 0

@@ -70,9 +70,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
 		'diff' => '1, 2, 3, 4, 5, 10, 11',
 		'bets' => [
-			'win(wp 1042, 30)' => '1, 2, 3, 4, 5',
+			'win(wp 1042, 30)' => '2, 5',
 		],
-		'total bets' => 150,
+		'total bets' => 60,
 	],
 	'6' => [
 		/**
@@ -133,7 +133,7 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -240
+//total win: -150
 //total place: -120
 //total qin: 0
 //total trio: 0
