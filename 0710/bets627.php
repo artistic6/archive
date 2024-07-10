@@ -48,12 +48,12 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '4, 12',
+		'favorites' => '4, 8, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '3, 11, 12',
+		'win inter' => '11',
 		'count sets' => 6,
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 11, 12',
-		'diff' => '1, 2, 4, 5, 6, 7',
+		'diff' => '1, 2, 3, 4, 5, 6, 7, 12',
 		'bets' => [
 		],
 		'total bets' => 0,

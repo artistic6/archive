@@ -48,15 +48,16 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '4, 12',
+		'favorites' => '4, 8, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '1, 3, 11, 12',
+		'win inter' => '11',
 		'count sets' => 10,
 		'allValues' => '1, 2, 3, 4, 5, 6, 10, 11, 12',
-		'diff' => '2, 4, 5, 6, 10',
+		'diff' => '1, 2, 3, 4, 5, 6, 10, 12',
 		'bets' => [
+			'win(wp 1329, 30)' => '1, 2, 3, 4, 5, 6, 7, 8',
 		],
-		'total bets' => 0,
+		'total bets' => 240,
 	],
 	'5' => [
 		/**
@@ -133,7 +134,7 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -540
+//total win: -780
 //total place: -60
 //total qin: 0
 //total trio: 0
