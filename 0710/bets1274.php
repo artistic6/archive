@@ -111,7 +111,7 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '1, 7, 8, 10',
+		'favorites' => '1, 3, 7, 8, 10',
 		'runners' => '1, 3, 4, 5, 7, 8, 9, 10, 11',
 		'win inter' => '3',
 		'count sets' => 8,
@@ -119,10 +119,8 @@ return [
 		'diff' => '1, 4, 5, 7, 8',
 		'bets' => [
 			'win(allValues 1274, $30)' => '1, 3, 4, 5, 7, 8',
-			'win(wp 1274, 30)' => '1, 7, 8',
-			'place(end-wp 1274, $60)' => '8',
 		],
-		'total bets' => 330,
+		'total bets' => 180,
 	],
 	'9' => [
 		/**
@@ -140,8 +138,8 @@ return [
 	],
 ];
 //total wp: 0
-//total win: -990
-//total place: -240
+//total win: -900
+//total place: -180
 //total qin: 0
 //total trio: 0
 //total: 0

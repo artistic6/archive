@@ -98,10 +98,9 @@ return [
 		Race 8
 		*/
 		'win(allValues , $30)' => '1, 3, 4, 5, 7, 8',
-		'win(wp , 30)' => '1, 7, 8',
-		'place(end-wp , $60)' => '8',
 		'win(allValues 1008, $30)' => '1, 3, 4, 5, 7',
-		'win(wp 1008, 30)' => '1, 2, 3, 4, 5, 6, 7',
+		'win(wp 1008, 30)' => '1, 3, 7',
+		'place(end-wp 1008, $60)' => '7',
 		'win(allValues 1488, $30)' => '1, 4, 5, 7',
 		'win(allValues 1491, $30)' => '3, 4, 7, 8',
 		'win(allValues, union)' => '1, 3, 4, 5, 7, 8',
