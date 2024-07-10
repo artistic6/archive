@@ -166,17 +166,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalWin += ($unitBet / 10) * $winAmount;
         }
     }
-    if(!empty($allValues) && count($allValues) <= 7){
-        //$allValues = array_slice($allValues, 0, 6);
-        $racetext .= "\t\t\t'win(allValues $revision, $" . $unitBet . ")' => '" . implode(", ", $allValues) . "',\n"; 
-        $totalBets[$raceNumber] += 1 * $unitBet * count($allValues);
-        $totalWin -= 1 * $unitBet * count($allValues);
-        if(isset($officialWin) && in_array($officialWin[0], $allValues)){
-            $totalRace[$raceNumber] += ($unitBet / 10) * $winAmount;
-            $racetext .= "\t\t\t'1 won(win bet)' => " . ($unitBet / 10) * $winAmount . ",\n";
-            $totalWin += ($unitBet / 10) * $winAmount;
-        }
-    }
     if(count($favorites) >= 3 && count($winInter) >= 3 && !in_array(end($favorites), $diff)){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . 2 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += 2 * $unitBet;
