@@ -20,13 +20,19 @@ foreach ($dir as $fileinfo) {
         $fullFilePath = $currentDir . DIRECTORY_SEPARATOR . $fileinfo->getFilename();
         $fileContents = include($fullFilePath);
         foreach($fileContents as $raceNumber => $data){
+            $placesFav = [];
+            $placesWP = [];
             if(isset($data['bets'])) {
                 foreach($data['bets'] as $key => $value){
                     if(!in_array($value, $bets[$raceNumber])) {
                         $bets[$raceNumber][$key] = $value;
                     }
+                    if(strpos($key, "place(end-wp") === 0 && !in_array($value, $placesWP)) $placesWP[] = $value;
+                    if(strpos($key, "place(end-fa") === 0 && !in_array($value, $placesFav)) $placesFav[] = $value;
                 }
             }
+            $places = array_intersect($placesFav, $placesWP);
+            if(!empty($places)) $bets[$raceNumber]['sure place'] = implode(", ", $places);
         }
     }
 }
