@@ -6,11 +6,14 @@ $raceDate = trim($argv[1]);
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "agregate.php";
 
+$mainBetsFile = $currentDir . DIRECTORY_SEPARATOR . "bets.php";
+$mainData = include($mainBetsFile);
+$numberOfRaces = count($mainData);
 $outtext = "<?php\n\n";
 $outtext .= "return [\n";
 
 $bets = [];
-for($raceNumber = 1; $raceNumber <= 11; $raceNumber ++) $bets[$raceNumber] = [];
+for($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber ++) $bets[$raceNumber] = ['favorites' => '(F) ' . $mainData[$raceNumber]['favorites']];
 $dir = new DirectoryIterator($currentDir); 
 foreach ($dir as $fileinfo) {
     if(!$fileinfo->isDot()&& preg_match("/(bets)/", $fileinfo->getFilename())) {
@@ -26,25 +29,6 @@ foreach ($dir as $fileinfo) {
             }
         }
     }
-}
-foreach($bets as $raceNumber => $data){
-    $firstSet = true;
-    $unionWinValues = [];
-    foreach($data as $key => $value){
-        if(strpos($key, "win(allValues") === 0){
-            if($firstSet){
-                $interWinValues = explode(", ", $value);
-                $firstSet = false;
-            }
-            else $interWinValues = array_intersect($interWinValues, explode(", ", $value));
-            $unionWinValues = array_values(array_unique(array_merge($unionWinValues, explode(", ", $value))));
-        }
-    }
-    sort($unionWinValues);
-    if(!empty($unionWinValues)) $bets[$raceNumber]['win(allValues, union)'] = implode(", ", $unionWinValues);
-    if(isset($interWinValues)) $bets[$raceNumber]['win(allValues, intersection)'] = implode(", ", $interWinValues);
-    unset($unionWinValues);
-    unset($interWinValues);
 }
 foreach($bets as $raceNumber => $data){
     if(!empty($data)){
