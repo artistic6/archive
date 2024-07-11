@@ -25,6 +25,10 @@ foreach ($dir as $fileinfo) {
                     if(!in_array($value, $bets[$raceNumber])) {
                         $bets[$raceNumber][$key] = $value;
                     }
+                    if(strpos($key, "place") === 0){
+                        $pivotKey = array_search($value, $data['bets']);
+                        if(strpos($key, "place(end-wp") === 0 && strpos($pivotKey, "place(end-fa") === 0) $bets[$raceNumber]["sure place bet"] = $value;
+                    }
                 }
             }
         }
