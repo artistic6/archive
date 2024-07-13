@@ -29,14 +29,13 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '1, 2, 7',
+		'favorites' => '1, 2, 3, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'win inter' => '3, 11',
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'bets' => [
-			'place(end-wp 1472, $60)' => '7',
 		],
-		'total bets' => 60,
+		'total bets' => 0,
 	],
 	'4' => [
 		/**
@@ -138,7 +137,7 @@ return [
 ];
 //total wp: 0
 //total win: 0
-//total place: -120
+//total place: -60
 //total qin: 0
 //total trio: 0
 //total: 0
