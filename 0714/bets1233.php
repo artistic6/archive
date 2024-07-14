@@ -35,7 +35,7 @@ return [
 		'allValues' => '1, 3, 5, 6, 7',
 		'bets' => [
 			'place(end-favorites 1233, $60)' => '7',
-			'place/win/qin/trio' => '3, 7, 11',
+			'place/win/qin/trio 1233' => '3, 7, 11',
 			'place(end-wp 1233, $60)' => '7',
 		],
 		'total bets' => 120,

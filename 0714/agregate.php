@@ -19,7 +19,9 @@ return [
 		*/
 		'favorites' => '(F) 1, 2, 3, 7',
 		'place(end-favorites , $60)' => '7',
-		'place/win/qin/trio' => '3, 7, 9',
+		'place/win/qin/trio ' => '3, 7, 9, 11',
+		'place/win/qin/trio 1000' => '3, 7, 11',
+		'place/win/qin/trio 1008' => '3, 7, 9',
 		'sure place' => '7',
 	],
 	'4' => [
