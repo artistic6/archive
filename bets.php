@@ -135,8 +135,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    $X = array_intersect($winInter, $allValues, $favorites);
-    $racetext .= "\t\t'X' => '" . implode(", ", $X) . "',\n";
     $racetext .= "\t\t'bets' => [\n";
     if(count($favorites) >= 3 && in_array(count($winInter), [3, 4, 5])){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . 2 * $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
