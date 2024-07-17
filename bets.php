@@ -134,8 +134,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
-    $X = array_intersect($winInter, $allValues, $favorites);
-    $racetext .= "\t\t'X' => '" . implode(", ", $X) . "',\n";
     $racetext .= "\t\t'bets' => [\n";
     if(count($favorites) >= 3 && in_array(count($winInter), [3, 4, 5])){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
@@ -145,24 +143,6 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[end($favorites)];
             $racetext .= "\t\t\t'1 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
             $totalMajorPlaceF += 1/10 * $unitBet * $placeAmount[end($favorites)];
-        }
-        if(count(array_intersect($favorites, $winInter)) === 2) {
-            $minorPlaceBet = array_diff($winInter, [end($favorites)]);
-            $racetext .= "\t\t\t'place $revision' => '" . implode(", ", $minorPlaceBet) . "',\n"; 
-            $totalBets[$raceNumber] += $unitBet * count($minorPlaceBet);
-            $totalMinorPlace -= $unitBet * count($minorPlaceBet);
-            if(isset($officialWin)){
-                if(!empty(array_intersect($minorPlaceBet, array_slice($officialWin, 0, 3)))){
-                    $selected = array_intersect($minorPlaceBet, array_slice($officialWin, 0, 3));
-                    foreach($selected as $placed){
-                        if(isset($placeAmount[$placed])){
-                            $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[$placed];
-                            $racetext .= "\t\t\t'3 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[$placed] . ",\n";
-                            $totalMinorPlace += 1/10 * $unitBet * $placeAmount[$placed];
-                        }
-                    }
-                }
-            }
         }
     }
     $wp = array_intersect($allValues, $favorites);
