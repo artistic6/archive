@@ -29,9 +29,9 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '8',
+		'favorites' => '2, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'win inter' => '2, 3, 8',
+		'win inter' => '2, 3',
 		'allValues' => '1, 2, 3, 5, 6, 7',
 		'bets' => [
 		],
