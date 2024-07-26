@@ -12,13 +12,13 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '(F) 5',
+		'favorites' => '(F) 5, 6',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
-		'favorites' => '(F) 2, 8',
+		'favorites' => '(F) 2, 3, 8',
 	],
 	'4' => [
 		/**
