@@ -1,0 +1,10 @@
+raceDate="0728";
+php getodds.php $raceDate S3 2;
+php getwinodds.php $raceDate S3 2;
+php bets.php $raceDate;
+for i in `seq 1 1687`; 
+do 
+    php bets.php $raceDate $i;
+done
+php agregate.php $raceDate;
+
