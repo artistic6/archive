@@ -5,7 +5,8 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '(F) 1, 2',
+		'favorites' => '(F) 1, 2, 3',
+		'place(end-wp , $100)' => '3',
 	],
 	'2' => [
 		/**
