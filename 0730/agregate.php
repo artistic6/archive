@@ -48,6 +48,6 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '(F) 14',
+		'favorites' => '(F) 10, 14',
 	],
 ];
