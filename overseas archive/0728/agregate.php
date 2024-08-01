@@ -20,6 +20,7 @@ return [
 		'favorites' => '(F) 3, 5, 7',
 		'place(end-favorites , $100)' => '7',
 		'sure place' => '7',
+		'result' => '5, 7, 6'
 	],
 	'4' => [
 		/**
@@ -39,6 +40,7 @@ return [
 		*/
 		'favorites' => '(F) 1, 4, 6, 7, 13',
 		'place(end-wp , $100)' => '7',
+		'result' => '2, 13, 4'
 	],
 	'7' => [
 		/**
@@ -47,6 +49,7 @@ return [
 		'favorites' => '(F) 5, 6, 7',
 		'place(end-favorites , $100)' => '7',
 		'sure place' => '7',
+		'result' => '3, 15, 12'
 	],
 	'8' => [
 		/**
@@ -61,6 +64,7 @@ return [
 		'favorites' => '(F) 3, 4, 7, 9, 14',
 		'place(end-wp 1028, $100)' => '9',
 		'place(end-wp 1099, $100)' => '7',
+		'result' => '9, 15, 13'
 	],
 	'10' => [
 		/**

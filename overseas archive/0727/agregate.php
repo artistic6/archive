@@ -7,6 +7,7 @@ return [
 		*/
 		'favorites' => '(F) 1, 2, 3',
 		'place(end-wp , $100)' => '3',
+		'result' => '7, 2, 5'
 	],
 	'2' => [
 		/**
@@ -15,6 +16,7 @@ return [
 		'favorites' => '(F) 5, 6, 8',
 		'place(end-favorites , $100)' => '8',
 		'sure place' => '8',
+		'result' => '8, 3, 9'
 	],
 	'3' => [
 		/**
@@ -22,6 +24,7 @@ return [
 		*/
 		'favorites' => '(F) 1, 2, 3, 6, 8',
 		'place(end-wp 101, $100)' => '6',
+		'result' => '7, 1, 3'
 	],
 	'4' => [
 		/**
@@ -47,6 +50,7 @@ return [
 		*/
 		'favorites' => '(F) 5, 6, 7, 9, 10',
 		'place(end-wp 1, $100)' => '7',
+		'result' => '5, 1, 2'
 	],
 	'8' => [
 		/**
@@ -54,5 +58,6 @@ return [
 		*/
 		'favorites' => '(F) 1, 2, 3, 10',
 		'place(end-wp , $100)' => '3',
+		'result' => '1, 7, 3'
 	],
 ];
