@@ -5,9 +5,9 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '1, 14',
+		'favorites' => '1, 5, 14',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '8, 11',
+		'win inter' => '8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -17,13 +17,14 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '5, 6',
+		'favorites' => '5, 6, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'win inter' => '3, 4, 5, 6',
+		'win inter' => '4, 6',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
+			'place(end-wp 1198, $100)' => '7',
 		],
-		'total bets' => 0,
+		'total bets' => 100,
 	],
 	'3' => [
 		/**
@@ -41,9 +42,9 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '1',
+		'favorites' => '1, 2',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win inter' => '1, 3, 4, 5, 6, 8, 10',
+		'win inter' => '1, 3, 4, 5, 8, 10',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'bets' => [
 		],
@@ -53,9 +54,9 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '1, 12',
+		'favorites' => '1, 12, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17',
-		'win inter' => '2, 3, 5',
+		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 10, 11',
 		'bets' => [
 		],
@@ -65,9 +66,9 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '11',
+		'favorites' => '11, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16',
-		'win inter' => '5, 11, 12',
+		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -90,15 +91,15 @@ return [
 		Race 8
 		*/
 		'favorites' => '9',
-		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19',
-		'win inter' => '2, 3, 9, 10, 12',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'runners' => '1, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19',
+		'win inter' => '3, 9, 10, 12',
+		'allValues' => '',
 		'bets' => [
 		],
 		'total bets' => 0,
 	],
 ];
 //total major place favorites: 0
-//total major place wp: 0
+//total major place wp: -100
 //total minor place: 0
 //total: 0
