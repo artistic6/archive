@@ -15,6 +15,9 @@ $outtext = "<?php\n\n";
 $outtext .= "return [\n";
 
 $bets = [];
+$placesFav = [];
+$placesWP = [];
+$places = [];
 for($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber ++) $bets[$raceNumber] = ['favorites' => '(F) ' . $mainData[$raceNumber]['favorites']];
 $dir = new DirectoryIterator($currentDir); 
 foreach ($dir as $fileinfo) {
@@ -22,22 +25,21 @@ foreach ($dir as $fileinfo) {
         $fullFilePath = $currentDir . DIRECTORY_SEPARATOR . $fileinfo->getFilename();
         $fileContents = include($fullFilePath);
         foreach($fileContents as $raceNumber => $data){
-            $placesFav = [];
-            $placesWP = [];
-            $places = [];
             if(isset($oldData[$raceNumber]['places'])) $oldPlaces = explode(", ", $oldData[$raceNumber]['places']);
             else $oldPlaces = [];
+            if(!isset($placesWP[$raceNumber])) $placesWP[$raceNumber] = [];
+            if(!isset($placesFav[$raceNumber])) $placesFav[$raceNumber] = [];
             if(isset($data['bets'])) {
                 foreach($data['bets'] as $key => $value){
                     if(!in_array($value, $bets[$raceNumber])) {
                         $bets[$raceNumber][$key] = $value;
                     }
-                    if(strpos($key, "place(end-wp") === 0 && !in_array($value, $placesWP)) $placesWP[] = $value;
-                    if(strpos($key, "place(end-fa") === 0 && !in_array($value, $placesFav)) $placesFav[] = $value;
+                    if(strpos($key, "place(end-wp") === 0 && !in_array($value, $placesWP[$raceNumber])) $placesWP[$raceNumber][] = $value;
+                    if(strpos($key, "place(end-fa") === 0 && !in_array($value, $placesFav[$raceNumber])) $placesFav[$raceNumber][] = $value;
                 }
             }
-            $places = array_intersect($placesFav, $placesWP);
-            $oldPlaces = array_values(array_unique(array_merge($oldPlaces, $placesFav, $placesWP)));
+            $places = array_intersect($placesFav[$raceNumber], $placesWP[$raceNumber]);
+            $oldPlaces = array_values(array_unique(array_merge($oldPlaces, $placesFav[$raceNumber], $placesWP[$raceNumber])));
             if(!empty($places)) $bets[$raceNumber]['sure place'] = implode(", ", $places);
             sort($oldPlaces);
             if(!empty($oldPlaces)) $bets[$raceNumber]['places'] = implode(", ", $oldPlaces);
