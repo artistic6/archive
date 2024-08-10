@@ -51,13 +51,13 @@ $headers = array();
 $headers[] = 'Content-Type: application/json';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $endpoint);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_ENCODING , '');
 curl_setopt($ch, CURLOPT_POSTFIELDS, $qry);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-$result = curl_exec($ch);
+$output = curl_exec($ch);
+$result = json_decode($output, true);
 var_dump($result);
 
 if (curl_errno($ch)) {
