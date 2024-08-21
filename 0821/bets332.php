@@ -30,7 +30,7 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '1',
+		'favorites' => '1, 5',
 		'runners' => '1, 2, 3, 4, 5, 6',
 		'win inter' => '1, 2, 3',
 		'allValues' => '',
