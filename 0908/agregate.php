@@ -26,7 +26,9 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '(F) 1, 10',
+		'favorites' => '(F) 1, 5, 10',
+		'place(end-wp , $100)' => '10',
+		'places' => '10',
 	],
 	'5' => [
 		/**
@@ -61,7 +63,7 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '(F) 2, 3, 6, 8, 11',
+		'favorites' => '(F) 1, 2, 3, 6, 8, 11',
 		'places' => '8',
 	],
 	'10' => [
