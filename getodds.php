@@ -1,6 +1,8 @@
 
 <?php
 
+require 'functions.php';
+
 $currentYear = "2024";
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
@@ -36,21 +38,9 @@ for($r = 1; $r <= $totalRaces; $r++){
 
     $outtext .= "\t$r => [\n";
 
-    $oddsJSON = file_get_contents("https://bet2.hkjc.com/racing/getJSON.aspx?type=winplaodds&date=$raceDateFormat&venue=$venue&start=$r&end=$r");
+    $odds = getPlaceOdds($raceDateFormat, $venue, $r);
 
-    $odds = json_decode($oddsJSON, true);
-    if($odds == NULL) exit("ERROR GETTING DATA !!!\n");
-    $odds = $odds["OUT"];
-
-    $pos = strpos($odds, "#PLA");
-    $odds = substr($odds, $pos, strlen($odds));
-
-    $odds = explode(";",$odds);
-
-    for($k = 1; $k < count($odds); $k++) {
-        $lineParts = explode("=", $odds[$k]);
-        $runner = $lineParts[0];
-        $currentOdds = $lineParts[1];
+    foreach($odds as $runner => $currentOdds){
         if($currentOdds !== "SCR"){
             $outtext .= "\t\t$runner => $currentOdds,\n";
         }
