@@ -79,9 +79,9 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '1, 4, 5, 8',
+		'favorites' => '1, 2, 4, 5, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8',
-		'win inter' => '2, 3',
+		'win inter' => '2',
 		'allValues' => '1, 3, 5, 6, 7, 8',
 		'bets' => [
 			'place(end-wp 314, $100)' => '8',
