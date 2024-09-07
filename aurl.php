@@ -1,7 +1,7 @@
 <?php
 $endpoint = "https://info.cld.hkjc.com/graphql/base/";
-$date = "2024-08-11";
-$venueCode = "S2";
+$date = "2024-09-08";
+$venueCode = "ST";
 $raceNo = 1;
 $qryParams = [];
 $qryParams["operationName"] = "racing";
@@ -9,7 +9,7 @@ $qryParams["variables"] = [
     "date" => $date,
     "venueCode" => $venueCode,
     "raceNo" => $raceNo,
-    "oddsTypes" => ["WIN", "PLA"]
+    "oddsTypes" => ["PLA"]
 ];
 $qryParams["query"] = 'query racing($date: String, $venueCode: String, $oddsTypes: [OddsType], $raceNo: Int) {
   raceMeetings(date: $date, venueCode: $venueCode) {
@@ -58,7 +58,7 @@ curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 $output = curl_exec($ch);
 $result = json_decode($output, true);
-var_dump($result);
+var_dump($result["data"]["raceMeetings"][0]["pmPools"]);
 
 if (curl_errno($ch)) {
     echo 'Error:' . curl_error($ch);
