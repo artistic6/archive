@@ -13,8 +13,8 @@ return [
 		*/
 		'favorites' => '(F) 3, 5, 6, 7',
 		'places' => '6, 7',
+		'place(end-wp 1454, $100)' => '7',
 		'place(end-wp 1586, $100)' => '6',
-		'place(end-wp 366, $100)' => '7',
 	],
 	'3' => [
 		/**
