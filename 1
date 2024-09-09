@@ -1,8 +1,8 @@
-raceDate="0908";
-php getodds.php $raceDate ST 10;
-php getwinodds.php $raceDate ST 10;
+raceDate="0911";
+php getodds.php $raceDate HV 8;
+php getwinodds.php $raceDate HV 8;
 php bets.php $raceDate;
-for i in `seq 1 1687`; 
+for i in `seq 1 1688`; 
 do 
     php bets.php $raceDate $i;
 done
