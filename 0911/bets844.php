@@ -41,7 +41,7 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '9',
+		'favorites' => '8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
