@@ -23,7 +23,10 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '(F) 2, 11',
+		'favorites' => '(F) 2, 4, 11',
+		'place(end-favorites , $100)' => '11',
+		'sure place' => '11',
+		'places' => '11',
 	],
 	'5' => [
 		/**
