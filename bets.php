@@ -75,6 +75,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'favorites' => '" . implode(", ", $favorites) . "',\n"; 
     $racetext .= "\t\t'runners' => '" . implode(", ", $runners) . "',\n"; 
     foreach($runners as $runner){
+        if(!is_array($history)) {
+            var_dump($history);
+            var_dump($raceNumber);
+            die();
+        }
         if(!isset($history[$raceNumber][$runner])) $history[$raceNumber][$runner] =  ["win" => [], "qin" => [], "trio" => []];
     }
     if(isset($officialWin)){
