@@ -41,9 +41,9 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '7, 11',
+		'favorites' => '1, 7, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '5, 12',
+		'win inter' => '5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 8, 10, 11',
 		'bets' => [
 		],
