@@ -53,12 +53,12 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '(F) 5',
+		'favorites' => '(F) 4, 5',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
-		'favorites' => '(F) 2',
+		'favorites' => '(F) 2, 10',
 	],
 ];
