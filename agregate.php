@@ -53,8 +53,10 @@ foreach ($dir as $fileinfo) {
             }
             sort($oldPlaces);
             sort($oldSures);
+            sort($oldSupersures);
             if(!empty($oldPlaces)) $bets[$raceNumber]['places'] = implode(", ", $oldPlaces);
             if(!empty($oldSures)) $bets[$raceNumber]['sures'] = implode(", ", $oldSures);
+            if(!empty($oldSupersures)) $bets[$raceNumber]['super sures'] = implode(", ", $oldSupersures);
         }
     }
 }
