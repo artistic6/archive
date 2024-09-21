@@ -49,7 +49,6 @@ foreach ($dir as $fileinfo) {
             $places = array_intersect($placesFav[$raceNumber], $placesWP[$raceNumber]);
             $oldPlaces = array_values(array_unique(array_merge($oldPlaces, $placesFav[$raceNumber], $placesWP[$raceNumber])));
             if(!empty($places)) {
-                $bets[$raceNumber]['sure place'] = implode(", ", $places);
                 $oldSures = array_values(array_unique(array_merge($oldSures, $places)));
             }
             sort($oldPlaces);
