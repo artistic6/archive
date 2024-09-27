@@ -42,10 +42,10 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '(F) 3, 8, 10, 12',
-		'place(end-favorites , $100)' => '12',
-		'place(end-wp , $100)' => '10',
-		'places' => '10, 12',
+		'favorites' => '(F) 3, 6, 8, 10, 12',
+		'places' => '8, 10, 12',
+		'place(end-wp 1016, $100)' => '10',
+		'place(end-wp 1026, $100)' => '8',
 	],
 	'7' => [
 		/**
@@ -63,10 +63,12 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '(F) 2, 6, 8',
+		'favorites' => '(F) 1, 2, 6, 8',
 		'place(end-favorites , $100)' => '8',
+		'super sure bet' => 'super sure place 8',
 		'places' => '8',
 		'sures' => '8',
+		'super sures' => '8',
 	],
 	'10' => [
 		/**

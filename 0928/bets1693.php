@@ -66,15 +66,13 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '3, 8, 10, 12',
+		'favorites' => '3, 6, 8, 10, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '1, 3, 12',
+		'win inter' => '1',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
-			'place(end-favorites 1693, $100)' => '12',
-			'place(end-wp 1693, $100)' => '10',
 		],
-		'total bets' => 200,
+		'total bets' => 0,
 	],
 	'7' => [
 		/**
@@ -104,15 +102,15 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '2, 6, 8',
+		'favorites' => '1, 2, 6, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'win inter' => '1, 2, 5, 8, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 			'place(end-favorites 1693, $100)' => '8',
-			'place(end-wp 1693, $100)' => '8',
+			'super sure bet' => 'super sure place 8',
 		],
-		'total bets' => 200,
+		'total bets' => 100,
 	],
 	'10' => [
 		/**
@@ -127,7 +125,7 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total major place favorites: -300
-//total major place wp: -200
+//total major place favorites: -200
+//total major place wp: 0
 //total minor place: 0
 //total: 0
