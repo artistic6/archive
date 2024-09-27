@@ -17,17 +17,18 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '(F) 3, 5, 7',
-		'place(end-favorites 1, $100)' => '7',
-		'places' => '7',
+		'favorites' => '(F) 2, 3, 5, 7',
+		'place(end-favorites , $100)' => '7',
+		'places' => '5, 7',
 		'sures' => '7',
+		'place(end-wp 1027, $100)' => '5',
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
 		'favorites' => '(F) 3, 6, 11',
-		'place(end-wp 1, $100)' => '11',
+		'place(end-wp , $100)' => '11',
 		'places' => '11',
 	],
 	'5' => [
@@ -40,7 +41,9 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '(F) 10, 12',
+		'favorites' => '(F) 8, 10, 12',
+		'place(end-favorites , $100)' => '12',
+		'places' => '12',
 	],
 	'7' => [
 		/**
@@ -59,7 +62,7 @@ return [
 		Race 9
 		*/
 		'favorites' => '(F) 2, 6, 8',
-		'place(end-wp 1, $100)' => '8',
+		'place(end-favorites , $100)' => '8',
 		'places' => '8',
 		'sures' => '8',
 	],
