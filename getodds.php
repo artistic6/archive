@@ -41,7 +41,7 @@ for($r = 1; $r <= $totalRaces; $r++){
     $odds = getPlaceOdds($raceDateFormat, $venue, $r);
 
     foreach($odds as $runner => $currentOdds){
-        if($currentOdds !== "SCR"){
+        if($currentOdds !== "SCR" && $currentOdds != 0){
             $outtext .= "\t\t$runner => $currentOdds,\n";
         }
     }
