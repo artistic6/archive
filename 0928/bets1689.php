@@ -66,14 +66,15 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '8, 10, 12',
+		'favorites' => '3, 8, 10, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '1, 3, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 			'place(end-favorites 1689, $100)' => '12',
+			'place(end-wp 1689, $100)' => '10',
 		],
-		'total bets' => 100,
+		'total bets' => 200,
 	],
 	'7' => [
 		/**
@@ -127,6 +128,6 @@ return [
 	],
 ];
 //total major place favorites: -200
-//total major place wp: -200
+//total major place wp: -300
 //total minor place: 0
 //total: 0
