@@ -7,7 +7,7 @@ return [
 		*/
 		'favorites' => '1, 5, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'win inter' => '1, 6, 8',
+		'win inter' => '1, 6, 7, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 			'place(end-favorites 469, $100)' => '7',
@@ -21,7 +21,7 @@ return [
 		*/
 		'favorites' => '6',
 		'runners' => '1, 2, 3, 4, 6, 7, 8, 9',
-		'win inter' => '1, 2, 3, 4, 6, 8',
+		'win inter' => '1, 2, 3, 4, 6, 7, 8, 9',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9',
 		'bets' => [
 		],
@@ -33,8 +33,8 @@ return [
 		*/
 		'favorites' => '2, 3, 5, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win inter' => '3, 9',
-		'allValues' => '1, 2, 3, 5, 6, 7',
+		'win inter' => '7, 9',
+		'allValues' => '1, 3, 6, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -46,7 +46,7 @@ return [
 		'favorites' => '2, 3, 6, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'win inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 11, 12',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -57,8 +57,8 @@ return [
 		*/
 		'favorites' => '2, 7, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '',
-		'allValues' => '1, 2, 3, 4, 5, 10, 11',
+		'win inter' => '4',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
@@ -69,12 +69,11 @@ return [
 		*/
 		'favorites' => '3, 6, 8, 10, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
-		'win inter' => '',
-		'allValues' => '1, 2, 4, 6, 8, 9, 10',
+		'win inter' => '1',
+		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
-			'place(end-wp 469, $100)' => '10',
 		],
-		'total bets' => 100,
+		'total bets' => 0,
 	],
 	'7' => [
 		/**
@@ -82,7 +81,7 @@ return [
 		*/
 		'favorites' => '1, 2',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
-		'win inter' => '1, 2',
+		'win inter' => '1, 2, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
@@ -94,7 +93,7 @@ return [
 		*/
 		'favorites' => '2, 6, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win inter' => '4, 6, 8',
+		'win inter' => '4, 6, 8, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 			'place(end-favorites 469, $100)' => '8',
@@ -108,11 +107,13 @@ return [
 		*/
 		'favorites' => '1, 2, 6, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
-		'win inter' => '5, 8',
+		'win inter' => '1, 2, 5, 8, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
+			'place(end-favorites 469, $100)' => '8',
+			'super sure bet' => 'super sure place 8',
 		],
-		'total bets' => 0,
+		'total bets' => 100,
 	],
 	'10' => [
 		/**
@@ -127,7 +128,7 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total major place favorites: -200
-//total major place wp: -300
+//total major place favorites: -300
+//total major place wp: -200
 //total minor place: 0
 //total: 0

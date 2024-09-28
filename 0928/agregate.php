@@ -24,7 +24,7 @@ return [
 		'place(end-favorites , $100)' => '7',
 		'places' => '5, 7',
 		'sures' => '7',
-		'place(end-wp 1027, $100)' => '5',
+		'place(end-wp 1009, $100)' => '5',
 	],
 	'4' => [
 		/**
@@ -32,8 +32,6 @@ return [
 		*/
 		'favorites' => '(F) 2, 3, 6, 11',
 		'places' => '6, 11',
-		'place(end-wp 1108, $100)' => '11',
-		'place(end-wp 59, $100)' => '6',
 	],
 	'5' => [
 		/**
@@ -47,8 +45,6 @@ return [
 		*/
 		'favorites' => '(F) 3, 6, 8, 10, 12',
 		'places' => '8, 10, 12',
-		'place(end-wp 1016, $100)' => '10',
-		'place(end-wp 1026, $100)' => '8',
 	],
 	'7' => [
 		/**
