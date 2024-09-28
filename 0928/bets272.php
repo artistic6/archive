@@ -92,9 +92,9 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '2, 8',
+		'favorites' => '2, 6, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win inter' => '1, 2, 3, 6, 8',
+		'win inter' => '6, 8',
 		'allValues' => '3, 4, 5, 6, 7, 8',
 		'bets' => [
 		],
