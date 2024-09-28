@@ -1,4 +1,4 @@
-for i in `seq 1691 1785`; 
+for i in `seq 1 1785`; 
 do
-    rm history$i.php;
+    wget https://raw.githubusercontent.com/artistic8/archive/refs/heads/main/history$i.php;
 done
