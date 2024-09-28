@@ -80,7 +80,7 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '1, 2',
+		'favorites' => '1, 2, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'win inter' => '2, 5',
 		'allValues' => '1, 3, 4, 5, 6, 7, 8, 9',
