@@ -35,13 +35,15 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '(F) 11',
+		'favorites' => '(F) 1, 11',
 	],
 	'6' => [
 		/**
 		Race 6
 		*/
-		'favorites' => '(F) 8, 9, 11',
+		'favorites' => '(F) 7, 8, 9, 11',
+		'place(end-wp , $100)' => '9',
+		'places' => '9',
 	],
 	'7' => [
 		/**
@@ -62,15 +64,16 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '(F) 4, 6, 7',
-		'place(end-wp , $100)' => '7',
-		'places' => '7',
+		'favorites' => '(F) 4, 5, 6, 7',
+		'place(end-favorites , $100)' => '7',
+		'places' => '6, 7',
 		'sures' => '7',
+		'place(end-wp 1025, $100)' => '6',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
-		'favorites' => '(F) 2, 6, 9',
+		'favorites' => '(F) 2, 6, 9, 11',
 	],
 ];
