@@ -5,9 +5,9 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '5',
+		'favorites' => '5, 6',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'win inter' => '1, 2, 4, 5, 6, 7, 8, 10, 11',
+		'win inter' => '1, 2, 4, 5, 6, 7, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
@@ -17,9 +17,9 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '10',
+		'favorites' => '8, 10',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
-		'win inter' => '4, 5, 7, 10',
+		'win inter' => '4, 5',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 10, 11',
 		'bets' => [
 		],
@@ -29,9 +29,9 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '7',
+		'favorites' => '4, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win inter' => '1, 3, 4, 5, 6, 7, 9',
+		'win inter' => '1, 4, 5, 7, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 		],
@@ -65,9 +65,9 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '9',
+		'favorites' => '8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '1, 2, 6, 7, 8, 9, 11',
+		'win inter' => '1, 6, 8, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13',
 		'bets' => [
 		],
@@ -89,7 +89,7 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '9',
+		'favorites' => '8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'win inter' => '2, 3',
 		'allValues' => '1, 3, 4, 5, 6, 7, 8',
@@ -101,9 +101,9 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '4',
+		'favorites' => '4, 7',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
-		'win inter' => '1, 2, 4, 5, 6, 7, 8, 9',
+		'win inter' => '1, 5, 6, 7, 8, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 8, 9, 10',
 		'bets' => [
 		],
@@ -113,21 +113,9 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '2',
+		'favorites' => '2, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
-		'win inter' => '1, 2, 3, 7, 8, 10, 13',
-		'allValues' => '',
-		'bets' => [
-		],
-		'total bets' => 0,
-	],
-	'11' => [
-		/**
-		Race 11
-		*/
-		'favorites' => '',
-		'runners' => '',
-		'win inter' => '1, 2, 3, 7, 8, 10, 13',
+		'win inter' => '2, 3, 10',
 		'allValues' => '',
 		'bets' => [
 		],

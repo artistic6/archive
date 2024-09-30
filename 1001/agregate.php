@@ -5,19 +5,19 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '(F) 5',
+		'favorites' => '(F) 5, 6',
 	],
 	'2' => [
 		/**
 		Race 2
 		*/
-		'favorites' => '(F) 10',
+		'favorites' => '(F) 8, 10',
 	],
 	'3' => [
 		/**
 		Race 3
 		*/
-		'favorites' => '(F) 7',
+		'favorites' => '(F) 4, 7',
 	],
 	'4' => [
 		/**
@@ -35,7 +35,7 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '(F) 9',
+		'favorites' => '(F) 8, 9',
 	],
 	'7' => [
 		/**
@@ -47,24 +47,18 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '(F) 9',
+		'favorites' => '(F) 8, 9',
 	],
 	'9' => [
 		/**
 		Race 9
 		*/
-		'favorites' => '(F) 4',
+		'favorites' => '(F) 4, 7',
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
-		'favorites' => '(F) 2',
-	],
-	'11' => [
-		/**
-		Race 11
-		*/
-		'favorites' => '(F) ',
+		'favorites' => '(F) 2, 9',
 	],
 ];
