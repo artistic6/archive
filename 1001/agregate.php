@@ -5,10 +5,10 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '(F) 4, 5, 6',
-		'place(end-favorites , $100)' => '6',
-		'places' => '6',
+		'favorites' => '(F) 4, 5, 6, 10',
+		'places' => '6, 10',
 		'sures' => '6',
+		'place(end-wp 2039, $100)' => '10',
 	],
 	'2' => [
 		/**
