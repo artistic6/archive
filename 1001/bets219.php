@@ -90,13 +90,14 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '2, 8, 9',
+		'favorites' => '2, 7, 8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'win inter' => '2, 9',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
+			'place(end-wp 219, $100)' => '8',
 		],
-		'total bets' => 0,
+		'total bets' => 100,
 	],
 	'9' => [
 		/**
@@ -126,6 +127,6 @@ return [
 	],
 ];
 //total major place favorites: -200
-//total major place wp: -100
+//total major place wp: -200
 //total minor place: 0
 //total: 0
