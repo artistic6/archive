@@ -173,19 +173,11 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $racetext .= "\t\t'diff2' => '" . implode(", ", $diff2) . "',\n";
     if(!empty($allValues) && !empty($suggestions["trio"]) && (count($diff1) <= 2 || count($diff2) <= 2))
         $racetext .= "\t\t'win bet' => '" . implode(", ", array_intersect($allValues, $suggestions["qin"])) . "',\n"; 
-    if(isset($officialWin)){
-        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-   }
     $racetext .= "\t\t'bets' => [\n";
     if(count($favorites) >= 3 && in_array(count($winInter), [3, 4, 5])){
         $racetext .= "\t\t\t'place(end-favorites $revision, $" . $unitBet . ")' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalMajorPlaceF -= $unitBet;
-        if(!empty($diff1) && !empty($diff2)) {
-if(isset($officialWin)){
-        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-}
-        }
         if(isset($officialWin) && in_array(end($favorites), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($favorites)])){
             $totalRace[$raceNumber] += 1/10 * $unitBet * $placeAmount[end($favorites)];
             $racetext .= "\t\t\t'1 won(place bet)' => " . 1/10 * $unitBet * $placeAmount[end($favorites)] . ",\n";
@@ -207,11 +199,6 @@ if(isset($officialWin)){
         $racetext .= "\t\t\t'place(end-wp $revision, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalMajorPlaceW -= $unitBet;
-        if(!empty($diff1) && !empty($diff2)) {
-if(isset($officialWin)){
-        $racetext .= "\t\t'official win' => '" . implode(", ", $officialWin) . "',\n"; 
-}
-        }
         if(isset($officialWin) && in_array(end($wp), array_slice($officialWin, 0, 3)) && isset($placeAmount[end($wp)])){
             $totalRace[$raceNumber] += (1 * $unitBet / 10) * $placeAmount[end($wp)];
             $racetext .= "\t\t\t'2 won(place bet)' => " . (1 * $unitBet / 10) * $placeAmount[end($wp)] . ",\n";
