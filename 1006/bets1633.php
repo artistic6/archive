@@ -107,22 +107,23 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '2, 5',
+		'favorites' => '2, 5, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '6, 9',
-			'qin' => '6, 9, 12',
-			'trio' => '5, 6, 9, 10, 12',//count trio: 5
-			'diff' => '5, 10, 12',//count diff: 3
-			'inter' => '',
+			'win' => '2, 3, 6, 9',
+			'qin' => '2, 3, 6, 9, 11, 12',
+			'trio' => '2, 3, 4, 5, 6, 9, 10, 11, 12',//count trio: 9
+			'diff' => '4, 5, 10, 11, 12',//count diff: 5
+			'inter' => '2',
 		],
-		'win inter' => '1, 2, 3, 5, 6, 9, 11',
+		'win inter' => '1, 2, 3, 11',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'diff1' => '11, 12',
-		'diff2' => '1, 2, 3, 4, 7, 8, 11',
+		'diff2' => '1, 7, 8',
 		'bets' => [
+			'place(end-favorites 1633, $100)' => '12',
 		],
-		'total bets' => 0,
+		'total bets' => 100,
 	],
 	'7' => [
 		/**
@@ -210,7 +211,7 @@ return [
 		'total bets' => 0,
 	],
 ];
-//total major place favorites: -100
+//total major place favorites: -200
 //total major place wp: -200
 //total sure place: 0
 //total: 0
