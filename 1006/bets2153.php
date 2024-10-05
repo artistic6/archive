@@ -190,7 +190,7 @@ return [
 		/**
 		Race 10
 		*/
-		'favorites' => '1, 5, 13',
+		'favorites' => '1, 5, 12, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'suggestions' => [
 			'win' => '3, 4, 10',
