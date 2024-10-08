@@ -226,3 +226,4 @@ $outtext .= "//total major place wp: $totalMajorPlaceW\n";
 $outtext .= "//total sure place: $totalSurePlace\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
+?>
