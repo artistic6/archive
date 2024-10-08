@@ -5,18 +5,19 @@ return [
 		/**
 		Race 1
 		*/
-		'favorites' => '1',
+		'favorites' => '1, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'suggestions' => [
-			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
-			'inter' => '',
+			'win' => '1, 8',
+			'qin' => '1, 4, 8',
+			'trio' => '1, 4, 8, 9, 12',//count trio: 5
+			'inter' => '1, 8',
 		],
-		'win inter' => '1, 3, 4, 6, 7, 8',
+		'win inter' => '1, 4, 8',
+		'win inter 2' => '1, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'diff1' => '8',
-		'diff2' => '1, 2, 3, 4, 5, 6, 7, 8',
+		'diff2' => '2, 3, 5, 6, 7',
 		'bets' => [
 		],
 		'total bets' => 0,
