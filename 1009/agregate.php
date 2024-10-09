@@ -37,8 +37,9 @@ return [
 		'favorites' => '(F) 3, 5, 9',
 		'place(end-favorites , $100)' => '9',
 		'super sure bet' => 'super sure place 9',
-		'places' => '9',
+		'places' => '5, 9',
 		'super sures' => '9',
+		'place(end-wp 2099, $100)' => '5',
 	],
 	'6' => [
 		/**
