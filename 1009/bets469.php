@@ -98,8 +98,9 @@ return [
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 10, 11',
 		'bets' => [
 			'place(end-favorites 469, $100)' => '9',
+			'super sure bet' => 'super sure place 9',
 		],
-		'total bets' => 100,
+		'total bets' => 200,
 		'wp' => '3, 5',//count wp: 2
 	],
 	'6' => [
@@ -163,5 +164,5 @@ return [
 ];
 //total major place favorites: -200
 //total major place wp: -100
-//total sure place: 0
+//total sure place: -100
 //total: 0

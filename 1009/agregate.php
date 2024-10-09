@@ -25,8 +25,10 @@ return [
 		*/
 		'favorites' => '(F) 1, 3, 11',
 		'place(end-favorites , $100)' => '11',
+		'super sure bet' => 'super sure place 11',
 		'places' => '11',
 		'sures' => '11',
+		'super sures' => '11',
 	],
 	'5' => [
 		/**
@@ -34,7 +36,9 @@ return [
 		*/
 		'favorites' => '(F) 3, 5, 9',
 		'place(end-favorites , $100)' => '9',
+		'super sure bet' => 'super sure place 9',
 		'places' => '9',
+		'super sures' => '9',
 	],
 	'6' => [
 		/**
