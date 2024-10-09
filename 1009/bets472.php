@@ -106,26 +106,27 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '9',
+		'favorites' => '8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
 			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
+			'qin' => '1',
+			'trio' => '1, 8',//count trio: 2
 			'inter' => '',
 		],
-		'win inter' => '2, 3, 6, 7, 8, 9, 11',
+		'win inter' => '3, 6, 8',
+		'win inter 2' => '14',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '9',//count wp: 1
+		'wp' => '8, 9',//count wp: 2
 	],
 	'7' => [
 		/**
 		Race 7
 		*/
-		'favorites' => '12',
+		'favorites' => '8, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
 			'win' => '',
@@ -133,12 +134,12 @@ return [
 			'trio' => '',//count trio: 0
 			'inter' => '',
 		],
-		'win inter' => '2, 5',
+		'win inter' => '2',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '',//count wp: 0
+		'wp' => '8',//count wp: 1
 	],
 	'8' => [
 		/**
