@@ -98,7 +98,7 @@ return [
 		'allValues' => '1, 2, 4, 5, 6, 7, 8',
 		'bets' => [
 			'place(end-favorites 2099, $100)' => '9',
-			'place(end-wp 2099, $100)' => '5',
+			'place(wp 2099, $100)' => '5',
 			'super sure bet' => 'super sure place 9',
 		],
 		'total bets' => 300,

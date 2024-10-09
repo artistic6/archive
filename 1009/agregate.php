@@ -39,7 +39,7 @@ return [
 		'super sure bet' => 'super sure place 9',
 		'places' => '5, 9',
 		'super sures' => '9',
-		'place(end-wp 2099, $100)' => '5',
+		'place(wp 2099, $100)' => '5',
 	],
 	'6' => [
 		/**
