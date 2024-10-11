@@ -30,6 +30,7 @@ $totalPlaceEndF = 0;
 $totalPlaceEndW = 0;
 $totalPlaceW = 0;
 $totalSurePlace = 0;
+$totalWin = 0;
 
 $currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
 
@@ -190,7 +191,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         }
     }
     $wp = array_intersect($allValues, $favorites);
-    if($condition1 && $condition2 && count($wp) === 3){
+    if(count($wp) === 3 && $condition1 && $condition2){
         $racetext .= "\t\t\t'place(end-wp $revision, $" . $unitBet . ")' => '" . end($wp) . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
         $totalPlaceEndW -= $unitBet;
@@ -239,5 +240,7 @@ $outtext .= "//total place end favorites: $totalPlaceEndF\n";
 $outtext .= "//total place end wp: $totalPlaceEndW\n";
 $outtext .= "//total place wp: $totalPlaceW\n";
 $outtext .= "//total sure place: $totalSurePlace\n";
+$outtext .= "//total win: $totalWin\n";
 $outtext .= "//total: $total\n";
 file_put_contents($outFile, $outtext);
+?>
