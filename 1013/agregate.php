@@ -13,8 +13,9 @@ return [
 		*/
 		'favorites' => '(F) 1, 4, 8',
 		'place(end-favorites , $100)' => '8',
-		'places' => '4, 8',
-		'sures' => '8',
+		'places($60)' => '8',
+		'sures($60)' => '8',
+		'placesWP($180)' => '8, 4',
 		'place(wp 1023, $300)' => '4',
 	],
 	'3' => [
@@ -28,8 +29,9 @@ return [
 		Race 4
 		*/
 		'favorites' => '(F) 6, 8, 10, 12, 14',
-		'places' => '12',
-		'sures' => '12',
+		'places($60)' => '12',
+		'sures($60)' => '12',
+		'placesWP($180)' => '12',
 	],
 	'5' => [
 		/**
@@ -42,7 +44,6 @@ return [
 		Race 6
 		*/
 		'favorites' => '(F) 5, 13',
-		'places' => '5, 13',
 		'place(wp 1024, $300)' => '5',
 		'place(wp 1335, $300)' => '13',
 	],

@@ -26,9 +26,11 @@ foreach ($dir as $fileinfo) {
         $fullFilePath = $currentDir . DIRECTORY_SEPARATOR . $fileinfo->getFilename();
         $fileContents = include($fullFilePath);
         foreach($fileContents as $raceNumber => $data){
-            if(isset($oldData[$raceNumber]['places'])) $oldPlaces = explode(", ", $oldData[$raceNumber]['places']);
+            if(isset($oldData[$raceNumber]['places($60)'])) $oldPlaces = explode(", ", $oldData[$raceNumber]['places($60)']);
             else $oldPlaces = [];
-            if(isset($oldData[$raceNumber]['sures'])) $oldSures = explode(", ", $oldData[$raceNumber]['sures']);
+            if(isset($oldData[$raceNumber]['placesWP($180)'])) $oldPlacesWP = explode(", ", $oldData[$raceNumber]['placesWP($180)']);
+            else $oldPlacesWP = [];
+            if(isset($oldData[$raceNumber]['sures($60)'])) $oldSures = explode(", ", $oldData[$raceNumber]['sures($60)']);
             else $oldSures = [];
             if(isset($oldData[$raceNumber]['super sures'])) $oldSupersures = explode(", ", $oldData[$raceNumber]['super sures']);
             else $oldSupersures = [];
@@ -50,15 +52,17 @@ foreach ($dir as $fileinfo) {
                 }
             }
             $places = array_intersect($placesEndFav[$raceNumber], $placesEndWP[$raceNumber]);
-            $oldPlaces = array_values(array_unique(array_merge($oldPlaces, $placesEndFav[$raceNumber], $placesEndWP[$raceNumber], $placesWP[$raceNumber])));
+            $oldPlaces = array_values(array_unique(array_merge($oldPlaces, $placesEndFav[$raceNumber], $placesEndWP[$raceNumber])));
+            $oldPlacesWP = array_values(array_unique(array_merge($oldPlaces, $placesWP[$raceNumber])));
             if(!empty($places)) {
                 $oldSures = array_values(array_unique(array_merge($oldSures, $places)));
             }
             sort($oldPlaces);
             sort($oldSures);
             sort($oldSupersures);
-            if(!empty($oldPlaces)) $bets[$raceNumber]['places'] = implode(", ", $oldPlaces);
-            if(!empty($oldSures)) $bets[$raceNumber]['sures'] = implode(", ", $oldSures);
+            if(!empty($oldPlaces)) $bets[$raceNumber]['places($60)'] = implode(", ", $oldPlaces);
+            if(!empty($oldSures)) $bets[$raceNumber]['sures($60)'] = implode(", ", $oldSures);
+            if(!empty($oldPlaces)) $bets[$raceNumber]['placesWP($180)'] = implode(", ", $oldPlacesWP);
             if(!empty($oldSupersures)) $bets[$raceNumber]['super sures'] = implode(", ", $oldSupersures);
         }
     }
