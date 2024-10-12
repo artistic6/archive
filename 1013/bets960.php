@@ -43,39 +43,41 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '2',
+		'favorites' => '1, 2',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9',
 		'suggestions' => [
-			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
-			'inter' => '',
+			'win' => '2, 7',
+			'qin' => '2, 3, 7',
+			'trio' => '2, 3, 4, 7',//count trio: 4
+			'inter' => '2',
 		],
-		'win inter' => '2, 5, 7, 9',
+		'win inter' => '2, 7, 9',
+		'win inter 2' => '2, 7',
 		'allValues' => '1, 3, 6, 7, 8',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '',//count wp: 0
+		'wp' => '1',//count wp: 1
 	],
 	'4' => [
 		/**
 		Race 4
 		*/
-		'favorites' => '12',
+		'favorites' => '10, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'suggestions' => [
-			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
-			'inter' => '',
+			'win' => '1, 12',
+			'qin' => '1, 2, 12',
+			'trio' => '1, 2, 7, 10, 12',//count trio: 5
+			'inter' => '12',
 		],
-		'win inter' => '1, 3, 6, 11, 12',
+		'win inter' => '1, 12',
+		'win inter 2' => '1, 12',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '12',//count wp: 1
+		'wp' => '10, 12',//count wp: 2
 	],
 	'5' => [
 		/**
@@ -158,26 +160,27 @@ return [
 		/**
 		Race 9
 		*/
-		'favorites' => '4',
+		'favorites' => '4, 5',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13',
 		'suggestions' => [
-			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
-			'inter' => '',
+			'win' => '1, 5, 7, 8',
+			'qin' => '1, 4, 5, 6, 7, 8',
+			'trio' => '1, 4, 5, 6, 7, 8, 9',//count trio: 7
+			'inter' => '5',
 		],
-		'win inter' => '1, 2, 4, 5, 6, 7, 8, 9, 11, 12',
+		'win inter' => '1, 4, 5, 8, 9, 12',
+		'win inter 2' => '1, 5, 7, 8',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4',//count wp: 1
+		'wp' => '4, 5',//count wp: 2
 	],
 	'10' => [
 		/**
 		Race 10
 		*/
-		'favorites' => '12',
+		'favorites' => '6, 12',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'suggestions' => [
 			'win' => '',
