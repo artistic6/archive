@@ -24,16 +24,16 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '1, 4',
+		'favorites' => '1, 4, 8',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'suggestions' => [
-			'win' => '4',
-			'qin' => '1, 4',
-			'trio' => '1, 4, 7',//count trio: 3
+			'win' => '2, 3, 4',
+			'qin' => '1, 2, 3, 4, 8',
+			'trio' => '1, 2, 3, 4, 6, 7, 8',//count trio: 7
 			'inter' => '4',
 		],
-		'win inter' => '8',
-		'win inter 2' => '4, 9',
+		'win inter' => '',
+		'win inter 2' => '4',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7',
 		'bets' => [
 		],
