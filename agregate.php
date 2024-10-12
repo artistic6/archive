@@ -19,6 +19,8 @@ $placesEndFav = [];
 $placesEndWP = [];
 $placesWP = [];
 $places = [];
+$basicBet = 60;
+$wpBet = 3 * $basicBet;
 for($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber ++) $bets[$raceNumber] = ['favorites' => '(F) ' . $mainData[$raceNumber]['favorites']];
 $dir = new DirectoryIterator($currentDir); 
 foreach ($dir as $fileinfo) {
@@ -26,13 +28,13 @@ foreach ($dir as $fileinfo) {
         $fullFilePath = $currentDir . DIRECTORY_SEPARATOR . $fileinfo->getFilename();
         $fileContents = include($fullFilePath);
         foreach($fileContents as $raceNumber => $data){
-            if(isset($oldData[$raceNumber]['places($60)'])) $oldPlaces = explode(", ", $oldData[$raceNumber]['places($60)']);
+            if(isset($oldData[$raceNumber]["places(\$$basicBet)"])) $oldPlaces = explode(", ", $oldData[$raceNumber]["places(\$$basicBet)"]);
             else $oldPlaces = [];
-            if(isset($oldData[$raceNumber]['placesWP($180)'])) $oldPlacesWP = explode(", ", $oldData[$raceNumber]['placesWP($180)']);
+            if(isset($oldData[$raceNumber]["placesWP(\$$wpBet)"])) $oldPlacesWP = explode(", ", $oldData[$raceNumber]["placesWP(\$$wpBet)"]);
             else $oldPlacesWP = [];
-            if(isset($oldData[$raceNumber]['sures($60)'])) $oldSures = explode(", ", $oldData[$raceNumber]['sures($60)']);
+            if(isset($oldData[$raceNumber]["sures(\$$basicBet)"])) $oldSures = explode(", ", $oldData[$raceNumber]["sures(\$$basicBet)"]);
             else $oldSures = [];
-            if(isset($oldData[$raceNumber]['super sures'])) $oldSupersures = explode(", ", $oldData[$raceNumber]['super sures']);
+            if(isset($oldData[$raceNumber]["super sures(\$$basicBet)"])) $oldSupersures = explode(", ", $oldData[$raceNumber]["super sures(\$$basicBet)"]);
             else $oldSupersures = [];
             if(!isset($placesWP[$raceNumber])) $placesWP[$raceNumber] = [];
             if(!isset($placesEndWP[$raceNumber])) $placesEndWP[$raceNumber] = [];
@@ -60,10 +62,10 @@ foreach ($dir as $fileinfo) {
             sort($oldPlaces);
             sort($oldSures);
             sort($oldSupersures);
-            if(!empty($oldPlaces)) $bets[$raceNumber]['places($60)'] = implode(", ", $oldPlaces);
-            if(!empty($oldSures)) $bets[$raceNumber]['sures($60)'] = implode(", ", $oldSures);
-            if(!empty($oldPlaces)) $bets[$raceNumber]['placesWP($180)'] = implode(", ", $oldPlacesWP);
-            if(!empty($oldSupersures)) $bets[$raceNumber]['super sures'] = implode(", ", $oldSupersures);
+            if(!empty($oldPlaces)) $bets[$raceNumber]["places(\$$basicBet)"] = implode(", ", $oldPlaces);
+            if(!empty($oldSures)) $bets[$raceNumber]["sures(\$$basicBet)"] = implode(", ", $oldSures);
+            if(!empty($oldPlaces)) $bets[$raceNumber]["placesWP(\$$wpBet)"] = implode(", ", $oldPlacesWP);
+            if(!empty($oldSupersures)) $bets[$raceNumber]["super sures(\$$basicBet)"] = implode(", ", $oldSupersures);
         }
     }
 }
