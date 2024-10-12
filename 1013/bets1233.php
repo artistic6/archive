@@ -106,15 +106,16 @@ return [
 		/**
 		Race 6
 		*/
-		'favorites' => '13',
+		'favorites' => '5, 13',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14',
 		'suggestions' => [
-			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
+			'win' => '12',
+			'qin' => '3, 12',
+			'trio' => '3, 5, 12',//count trio: 3
 			'inter' => '',
 		],
 		'win inter' => '12',
+		'win inter 2' => '12',
 		'allValues' => '1, 2, 3, 4, 6, 7, 8, 9, 10',
 		'bets' => [
 		],
