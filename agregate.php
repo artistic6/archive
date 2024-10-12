@@ -19,7 +19,7 @@ $placesEndFav = [];
 $placesEndWP = [];
 $placesWP = [];
 $places = [];
-$basicBet = 60;
+$basicBet = 50;
 $wpBet = 3 * $basicBet;
 for($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber ++) $bets[$raceNumber] = ['favorites' => '(F) ' . $mainData[$raceNumber]['favorites']];
 $dir = new DirectoryIterator($currentDir); 
@@ -55,7 +55,7 @@ foreach ($dir as $fileinfo) {
             }
             $places = array_intersect($placesEndFav[$raceNumber], $placesEndWP[$raceNumber]);
             $oldPlaces = array_values(array_unique(array_merge($oldPlaces, $placesEndFav[$raceNumber], $placesEndWP[$raceNumber])));
-            $oldPlacesWP = array_values(array_unique(array_merge($oldPlaces, $placesWP[$raceNumber])));
+            $oldPlacesWP = array_values(array_unique(array_merge($oldPlacesWP, $placesWP[$raceNumber])));
             if(!empty($places)) {
                 $oldSures = array_values(array_unique(array_merge($oldSures, $places)));
             }
@@ -64,7 +64,7 @@ foreach ($dir as $fileinfo) {
             sort($oldSupersures);
             if(!empty($oldPlaces)) $bets[$raceNumber]["places(\$$basicBet)"] = implode(", ", $oldPlaces);
             if(!empty($oldSures)) $bets[$raceNumber]["sures(\$$basicBet)"] = implode(", ", $oldSures);
-            if(!empty($oldPlaces)) $bets[$raceNumber]["placesWP(\$$wpBet)"] = implode(", ", $oldPlacesWP);
+            if(!empty($oldPlacesWP)) $bets[$raceNumber]["placesWP(\$$wpBet)"] = implode(", ", $oldPlacesWP);
             if(!empty($oldSupersures)) $bets[$raceNumber]["super sures(\$$basicBet)"] = implode(", ", $oldSupersures);
         }
     }

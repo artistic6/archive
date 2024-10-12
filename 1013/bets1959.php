@@ -36,8 +36,8 @@ return [
 		'win inter 2' => '4',
 		'allValues' => '2, 3, 4, 5, 6',
 		'bets' => [
-			'place(end-favorites 1959, $100)' => '8',
-			'place(wp 1959, $300)' => '4',
+			'place(end-favorites 1959)' => '8',
+			'place(wp 1959)' => '4',
 		],
 		'total bets' => 400,
 		'wp' => '4',//count wp: 1
