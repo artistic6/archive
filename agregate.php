@@ -18,7 +18,6 @@ $bets = [];
 $placesEndFav = [];
 $placesEndWP = [];
 $placesWP = [];
-$places = [];
 $basicBet = 50;
 $wpBet = 3 * $basicBet;
 for($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber ++) $bets[$raceNumber] = ['favorites' => '(F) ' . $mainData[$raceNumber]['favorites']];
@@ -53,11 +52,11 @@ foreach ($dir as $fileinfo) {
                     }
                 }
             }
-            $places = array_intersect($placesEndFav[$raceNumber], $placesEndWP[$raceNumber]);
+            $newSures = array_intersect($placesEndFav[$raceNumber], $placesEndWP[$raceNumber]);
             $oldPlaces = array_values(array_unique(array_merge($oldPlaces, $placesEndFav[$raceNumber], $placesEndWP[$raceNumber])));
             $oldPlacesWP = array_values(array_unique(array_merge($oldPlacesWP, $placesWP[$raceNumber])));
             if(!empty($places)) {
-                $oldSures = array_values(array_unique(array_merge($oldSures, $places)));
+                $oldSures = array_values(array_unique(array_merge($oldSures, $newSures)));
             }
             sort($oldPlaces);
             sort($oldSures);
