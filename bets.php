@@ -68,8 +68,13 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $winsArray = $allRacesOdds[$raceNumber];
     asort($winsArray);
     $runners = array_keys($winsArray);
-    $favorite = $runners[0];
-    if(!in_array($favorite, $favorites)) $favorites[] = $favorite;
+    if(isset($allWinOdds)){
+        $tmpwinsArray = $allWinOdds[$raceNumber];
+        asort($tmpwinsArray);
+        $tmprunners = array_keys($tmpwinsArray);
+        if(!in_array($tmprunners[0], $favorites)) $favorites[] = $tmprunners[0];
+    }
+    if(!in_array($runners[0], $favorites)) $favorites[] = $runners[0];
     $favorites = array_intersect($favorites, $runners);
     sort($favorites);
     $_2sets = get2Sets($favorites);
