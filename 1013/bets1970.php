@@ -125,20 +125,21 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '4',
+		'favorites' => '2, 4',
 		'runners' => '1, 2, 3, 4, 5, 6, 8, 9, 10',
 		'suggestions' => [
-			'win' => '',
-			'qin' => '',
-			'trio' => '',//count trio: 0
-			'inter' => '',
+			'win' => '2',
+			'qin' => '2, 4',
+			'trio' => '2, 4, 5',//count trio: 3
+			'inter' => '2',
 		],
-		'win inter' => '1, 2, 3, 4, 10',
+		'win inter' => '1, 2, 10',
+		'win inter 2' => '2',
 		'allValues' => '1, 2, 3, 4',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '4',//count wp: 1
+		'wp' => '2, 4',//count wp: 2
 	],
 	'8' => [
 		/**
