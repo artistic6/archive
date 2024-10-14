@@ -93,6 +93,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
             $suggestions["trio"] = array_values(array_unique(array_merge($suggestions["trio"], $favhistory[$raceNumber][$example]["trio"])));
         }
     }
+    $winInter2 = array_intersect($winInter2, $runners);
     $suggestions["win"] = array_intersect($suggestions["win"], $runners);
     $suggestions["qin"] = array_intersect($suggestions["qin"], $runners);
     $suggestions["trio"] = array_intersect($suggestions["trio"], $runners);
@@ -152,6 +153,10 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($winInter);
     $racetext .= "\t\t'win inter' => '" . implode(", ", $winInter) . "',\n";
+    if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {
+        $union = array_values(array_unique(array_merge($winInter, $favorites)));
+        sort($union);
+    }
     if(!empty($winInter2)){
         $racetext .= "\t\t'win inter 2' => '" . implode(", ", $winInter2) . "',\n";
     }
@@ -185,6 +190,20 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     $condition1 = !empty($winInter2);
     $condition2 = !empty($winInter);
     $racetext .= "\t\t'bets' => [\n";
+    if(count($favorites) > 1 && !empty($winInter) && empty(array_intersect($winInter, $favorites))) {
+        $union = array_values(array_unique(array_merge($winInter, $favorites)));
+        sort($union);
+        if(in_array(count($union), [3, 4])){
+            $racetext .= "\t\t\t'win(union)' => '" . implode(", ", $union) . "',\n"; 
+            $totalBets[$raceNumber] += $unitBet * count($union);
+            $totalWin -= $unitBet * count($union);
+            if(isset($officialWin) && in_array($officialWin[0], $union)){
+                $totalRace[$raceNumber] += 1/10 * $unitBet * $winAmount;
+                $racetext .= "\t\t\t'1 won(win bet)' => " . 1/10 * $unitBet * $winAmount . ",\n";
+                $totalWin += 1/10 * $unitBet * $winAmount;
+            }
+        }
+    }
     if($condition1 && $condition2 && count($favorites) >= 3){
         $racetext .= "\t\t\t'place(end-favorites $revision)' => '" .  end($favorites)  . "',\n"; 
         $totalBets[$raceNumber] += $unitBet;
