@@ -18,7 +18,7 @@ $bets = [];
 $placesEndFav = [];
 $placesEndWP = [];
 $placesWP = [];
-$basicBet = 50;
+$basicBet = 10;
 $wpBet = 3 * $basicBet;
 for($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber ++) $bets[$raceNumber] = ['favorites' => '(F) ' . $mainData[$raceNumber]['favorites']];
 $dir = new DirectoryIterator($currentDir); 
