@@ -61,7 +61,6 @@ return [
 		'favorites' => '(F) 5, 8, 9',
 		'place(end-favorites )' => '9',
 		'places($10)' => '9',
-		'place(wp 2189)' => '8',
 		'placesWP($30)' => '8',
 	],
 ];
