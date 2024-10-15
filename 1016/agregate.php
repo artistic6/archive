@@ -20,7 +20,7 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '(F) 11',
+		'favorites' => '(F) 6, 11',
 	],
 	'4' => [
 		/**
@@ -50,14 +50,18 @@ return [
 		'favorites' => '(F) 2, 4, 12',
 		'place(end-favorites )' => '12',
 		'places($10)' => '12',
-		'place(wp 451)' => '4',
 		'placesWP($30)' => '4, 2',
+		'place(wp 451)' => '4',
 		'place(wp 1477)' => '2',
 	],
 	'8' => [
 		/**
 		Race 8
 		*/
-		'favorites' => '(F) 5, 8',
+		'favorites' => '(F) 5, 8, 9',
+		'place(end-favorites )' => '9',
+		'places($10)' => '9',
+		'place(wp 2189)' => '8',
+		'placesWP($30)' => '8',
 	],
 ];
