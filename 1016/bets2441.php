@@ -28,15 +28,15 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '1, 5, 7',
-		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
+		'favorites' => '5, 7, 12',
+		'runners' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '2, 4, 5, 6, 7, 8, 9',
-			'qin' => '2, 4, 5, 6, 7, 8, 9, 11, 12',
-			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
-			'inter' => '5, 7',
+			'win' => '4, 5, 7, 9, 12',
+			'qin' => '2, 4, 5, 6, 7, 8, 9, 10, 12',
+			'trio' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 12',//count trio: 10
+			'inter' => '5, 7, 12',
 		],
-		'win inter' => '4, 9',
+		'win inter' => '7, 12',
 		'allValues' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
 		],
@@ -47,20 +47,20 @@ return [
 		/**
 		Race 3
 		*/
-		'favorites' => '6, 11',
+		'favorites' => '6, 9, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '5, 11, 12',
-			'qin' => '3, 5, 11, 12',
-			'trio' => '1, 3, 5, 7, 10, 11, 12',//count trio: 7
-			'inter' => '11',
+			'win' => '3, 5, 8, 9, 11, 12',
+			'qin' => '1, 3, 5, 7, 8, 9, 11, 12',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
+			'inter' => '9, 11',
 		],
-		'win inter' => '1, 3, 5, 11, 12',
-		'win inter 2' => '5, 11, 12',
+		'win inter' => '3',
 		'allValues' => '1, 2, 3, 4, 5, 6',
 		'bets' => [
+			'win(union 2441)' => '3, 6, 9, 11',
 		],
-		'total bets' => 0,
+		'total bets' => 400,
 		'wp' => '6',//count wp: 1
 	],
 	'4' => [
@@ -146,25 +146,25 @@ return [
 		/**
 		Race 8
 		*/
-		'favorites' => '1, 5, 8, 9',
+		'favorites' => '1, 5, 6, 8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '1, 2, 3, 4, 5, 8, 9, 10, 11, 12',
+			'win' => '1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12',
 			'qin' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
-			'inter' => '1, 5, 8, 9',
+			'inter' => '1, 5, 6, 8, 9',
 		],
-		'win inter' => '3',
+		'win inter' => '',
 		'allValues' => '3, 4, 5, 6, 7, 8, 10, 11, 12',
 		'bets' => [
 		],
 		'total bets' => 0,
-		'wp' => '5, 8',//count wp: 2
+		'wp' => '5, 6, 8',//count wp: 3
 	],
 ];
 //total place end favorites: -200
 //total place end wp: -100
 //total place wp: 0
 //total sure place: -100
-//total win: 0
+//total win: -400
 //total: 0
