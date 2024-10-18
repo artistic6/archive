@@ -2,8 +2,10 @@
 
 if(!isset($argv[1])) die("Race Date Not Entered!!\n");
 $raceDate = trim($argv[1]);
+if(!isset($argv[2])) $venue = "ST";
+else $venue = trim($argv[2]);
 
-$currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate;
+$currentDir = __DIR__ . DIRECTORY_SEPARATOR . $raceDate . $venue;
 $outFile = $currentDir . DIRECTORY_SEPARATOR . "agregate.php";
 
 if(file_exists($outFile)) $oldData = include($outFile);
