@@ -69,6 +69,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     if(isset($oldFavorites)) $favorites = $oldFavorites;
     else $favorites = [];
     $winsArray = $allRacesOdds[$raceNumber];
+    if(empty($winsArray)) continue;
     asort($winsArray);
     $runners = array_keys($winsArray);
     if(isset($allWinOdds)){
