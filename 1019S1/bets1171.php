@@ -24,21 +24,22 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '1, 9',
+		'favorites' => '1, 8, 9',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
-			'win' => '6, 8, 9, 10',
-			'qin' => '2, 6, 8, 9, 10',
-			'trio' => '1, 2, 4, 6, 8, 9, 10',//count trio: 7
-			'inter' => '9',
+			'win' => '4, 5, 6, 8, 9, 10',
+			'qin' => '1, 2, 4, 5, 6, 8, 9, 10',
+			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10',//count trio: 10
+			'inter' => '8, 9',
 		],
-		'win inter' => '2, 4, 6, 8, 9',
-		'win inter 2' => '6, 8, 9, 10',
+		'win inter' => '2, 4, 9',
+		'win inter 2' => '9',
 		'allValues' => '2, 3, 4, 5, 6, 7, 8, 9, 10, 11',
 		'bets' => [
+			'place(end-favorites 1171)' => '9',
 		],
-		'total bets' => 0,
-		'wp' => '9',//count wp: 1
+		'total bets' => 100,
+		'wp' => '8, 9',//count wp: 2
 	],
 	'3' => [
 		/**
@@ -98,7 +99,7 @@ return [
 		'wp' => '1',//count wp: 1
 	],
 ];
-//total place end favorites: 0
+//total place end favorites: -100
 //total place end wp: 0
 //total place wp: 0
 //total sure place: 0
