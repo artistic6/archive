@@ -56,9 +56,9 @@ return [
 		'place(end-favorites )' => '10',
 		'places($10)' => '10',
 		'sures($10)' => '10',
+		'placesWP($30)' => '1, 10',
 		'unions($10)' => '1, 3, 9, 10',
 		'experimental($10)' => '1, 3, 9, 10',
 		'place(wp 1004)' => '1',
-		'placesWP($30)' => '1, 10',
 	],
 ];
