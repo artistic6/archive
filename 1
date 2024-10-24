@@ -1,9 +1,9 @@
-raceDate="1023";
-venue="ST";
-php getodds.php $raceDate $venue 8;
-php getwinodds.php $raceDate $venue 8;
+raceDate="1027";
+venue="HV";
+php getodds.php $raceDate $venue 10;
+php getwinodds.php $raceDate $venue 10;
 php bets.php $raceDate $venue;
-for i in `seq 1 2573`; 
+for i in `seq 1 2574`; 
 do 
     php bets.php $raceDate $venue $i;
 done
