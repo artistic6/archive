@@ -3,8 +3,3 @@ venue="S1";
 php getodds.php $raceDate $venue 1;
 php getwinodds.php $raceDate $venue 1;
 php bets.php $raceDate $venue;
-for i in `seq 1 2631`; 
-do 
-    php bets.php $raceDate $venue $i;
-done
-php agregate.php $raceDate $venue;
