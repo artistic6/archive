@@ -15,9 +15,9 @@ return [
 		'place(end-favorites )' => '9',
 		'places($10)' => '9',
 		'sures($10)' => '9',
+		'placesWP($30)' => '9, 7',
 		'unions($10)' => '1, 2, 8, 9',
 		'experimental($10)' => '1, 2, 8, 9',
-		'placesWP($30)' => '9, 7',
 		'place(wp 1209)' => '7',
 	],
 	'3' => [
@@ -36,7 +36,7 @@ return [
 		/**
 		Race 4
 		*/
-		'favorites' => '(F) 1',
+		'favorites' => '(F) 1, 6',
 	],
 	'5' => [
 		/**
