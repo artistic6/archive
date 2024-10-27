@@ -76,10 +76,12 @@ foreach ($dir as $fileinfo) {
             if(!empty($oldPlaces)) $bets[$raceNumber]["places(\$$basicBet)"] = implode(", ", $oldPlaces);
             if(!empty($oldSures)) $bets[$raceNumber]["sures(\$$basicBet)"] = implode(", ", $oldSures);
             if(!empty($oldPlacesWP)) $bets[$raceNumber]["placesWP(\$$wpBet)"] = implode(", ", $oldPlacesWP);
-            if(!empty($oldUnions)) $bets[$raceNumber]["unions(\$$winBet)"] = implode(", ", $oldUnions);
-            $unionPlusFavorites = array_values(array_unique(array_merge($oldUnions, explode(", ",$mainData[$raceNumber]['favorites']))));
-            sort($unionPlusFavorites);
-            if(!empty($oldUnions)) $bets[$raceNumber]["union + favorites"] = implode(", ", $unionPlusFavorites);
+            if(!empty($oldUnions)) {
+                $bets[$raceNumber]["unions(\$$winBet)"] = implode(", ", $oldUnions);
+                $unionPlusFavorites = array_values(array_unique(array_merge($oldUnions, explode(", ",$mainData[$raceNumber]['favorites']))));
+                sort($unionPlusFavorites);
+                $bets[$raceNumber]["union + favorites"] = implode(", ", $unionPlusFavorites);
+            }
             if(!empty($oldSupersures)) $bets[$raceNumber]["super sures(\$$basicBet)"] = implode(", ", $oldSupersures);
         }
     }
