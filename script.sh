@@ -1,1 +1,1 @@
-while true; do ./1; ./2; ./p; sleep 600; done
+while true; do ./1; ./p; sleep 600; done
