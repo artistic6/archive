@@ -20,8 +20,8 @@ return [
 		'placesWP($30)' => '10, 1',
 		'unions($10)' => '1, 4, 5, 10',
 		'union + favorites' => '1, 4, 5, 10',
-		'place(wp 23)' => '10',
-		'place(wp 41)' => '1',
+		'place(wp 1006)' => '1',
+		'place(wp 1023)' => '10',
 	],
 	'3' => [
 		/**
@@ -54,7 +54,7 @@ return [
 		/**
 		Race 7
 		*/
-		'favorites' => '(F) 11',
+		'favorites' => '(F) 8, 11',
 	],
 	'8' => [
 		/**
