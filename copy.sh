@@ -1,4 +1,4 @@
-for i in `seq 1 2631`; 
+for i in `seq 1 2632`; 
 do 
-    cp 1027HV/bets.php  1027HV/bets$i.php;
+    cp 1030HV/bets.php  1030HV/bets$i.php;
 done
