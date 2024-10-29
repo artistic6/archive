@@ -41,7 +41,6 @@ return [
 		*/
 		'favorites' => '(F) 1, 5, 8',
 		'placesWP($30)' => '1',
-		'win(union 19)' => '1, 4, 5, 8',
 		'unions($10)' => '1, 4, 5, 8',
 		'union + favorites' => '1, 4, 5, 8',
 	],
