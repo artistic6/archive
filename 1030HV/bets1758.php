@@ -93,7 +93,7 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '1, 3, 5, 8',
+		'favorites' => '1, 3, 5, 8, 11',
 		'runners' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',
 		'suggestions' => [
 			'win' => '1, 2, 3, 4, 5, 6, 7, 8, 10',
@@ -101,7 +101,7 @@ return [
 			'trio' => '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12',//count trio: 12
 			'inter' => '1, 3, 5, 8',
 		],
-		'win inter' => '4',
+		'win inter' => '',
 		'allValues' => '1, 2, 3, 4, 5, 6, 7, 8',
 		'bets' => [
 		],

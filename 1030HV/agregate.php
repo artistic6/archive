@@ -48,10 +48,10 @@ return [
 		/**
 		Race 5
 		*/
-		'favorites' => '(F) 1, 3, 5, 8',
+		'favorites' => '(F) 1, 3, 5, 8, 11',
 		'placesWP($30)' => '1',
 		'unions($10)' => '1, 4, 5, 8',
-		'union + favorites' => '1, 3, 4, 5, 8',
+		'union + favorites' => '1, 3, 4, 5, 8, 11',
 	],
 	'6' => [
 		/**
