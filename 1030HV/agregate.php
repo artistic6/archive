@@ -16,16 +16,14 @@ return [
 		/**
 		Race 2
 		*/
-		'favorites' => '(F) 1, 9, 10',
+		'favorites' => '(F) 1, 2, 9, 10',
 		'place(end-favorites )' => '10',
-		'places($10)' => '10',
+		'places($10)' => '9, 10',
 		'sures($10)' => '10',
 		'placesWP($30)' => '10, 1, 9',
 		'unions($10)' => '1, 4, 5, 9, 10',
-		'union + favorites' => '1, 4, 5, 9, 10',
-		'win(union 1)' => '1, 4, 9, 10',
-		'place(wp 1191)' => '9',
-		'place(wp 1858)' => '1',
+		'union + favorites' => '1, 2, 4, 5, 9, 10',
+		'place(end-wp 1006)' => '9',
 	],
 	'3' => [
 		/**
