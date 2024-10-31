@@ -16,6 +16,7 @@ else $revision = "";
 $step = "bets$revision";
 $history = include(__DIR__ . DIRECTORY_SEPARATOR . "history$revision.php");
 $favhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "favhistory.php");
+$allfavhistory = include(__DIR__ . DIRECTORY_SEPARATOR . "allfavhistory.php");
 
 function factorial($n){
     if($n <= 0) return 1;
@@ -187,6 +188,20 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     }
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
+    if(isset($allfavhistory[$raceNumber][implode(", ", $favorites)])){
+        $racetext .= "\t\t\t'all fav history' => [" ;
+        $position = 0;
+        $allfavhistoryValues = [];
+        foreach($allfavhistory[$raceNumber][implode(", ", $favorites)] as $occurence) {
+            $allfavhistoryValues = array_values(array_unique(array_merge($allfavhistoryValues, $occurence)));
+            if($position < count($allfavhistory[$raceNumber][implode(", ", $favorites)]) - 1) $racetext .= "[" . implode(", ", $occurence) ."], ";
+            $position ++;
+        }
+        $racetext .= "[" . implode(", ", end($allfavhistory[$raceNumber][implode(", ", $favorites)])) ."]";
+        $racetext .= "],\n" ;
+        sort($allfavhistoryValues);
+        $racetext .= "\t\t\t'all fav history values' => '" . implode(", ", $allfavhistoryValues) . "',\n" ;;
+    }
     $condition1 = !empty($winInter2);
     $condition2 = !empty($winInter);
     $racetext .= "\t\t'bets' => [\n";
