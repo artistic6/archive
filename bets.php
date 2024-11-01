@@ -189,7 +189,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
     sort($allValues);
     $racetext .= "\t\t'allValues' => '" . implode(", ", $allValues) . "',\n";
     if(isset($allfavhistory[$raceNumber][implode(", ", $favorites)])){
-        $racetext .= "\t\t\t'all fav history' => [" ;
+        $racetext .= "\t\t'all fav history' => [" ;
         $position = 0;
         $allfavhistoryValues = [];
         foreach($allfavhistory[$raceNumber][implode(", ", $favorites)] as $occurence) {
@@ -200,7 +200,7 @@ for ($raceNumber = 1; $raceNumber <= $numberOfRaces; $raceNumber++) {
         $racetext .= "[" . implode(", ", end($allfavhistory[$raceNumber][implode(", ", $favorites)])) ."]";
         $racetext .= "],\n" ;
         sort($allfavhistoryValues);
-        $racetext .= "\t\t\t'all fav history values' => '" . implode(", ", $allfavhistoryValues) . "',\n" ;;
+        $racetext .= "\t\t'all fav history values' => '" . implode(", ", $allfavhistoryValues) . "',\n" ;;
     }
     $condition1 = !empty($winInter2);
     $condition2 = !empty($winInter);
